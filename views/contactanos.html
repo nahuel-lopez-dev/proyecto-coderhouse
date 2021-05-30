@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluciones Online Contacto</title>
+  <meta name="keywords"
+    content="SOLUCIONES, ONLINE, PROBLEMAS, ARREGLOS, PÁGINAS WEB, DESARROLLO DE SOFTWARE, SOPORTE IT, MARKETING DIGITAL, NEGOCIOS, EMPRESA, SEO,">
+  <meta name="description"
+    content="Esta es la sección para que nos contacten. Mostramos nuestros datos de contacto, y un formulario para que puedan enviar.">
+  <!--Bootstrap local CSS-->
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
+  <!--Enlace a css-->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!--Enlaces a google font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2? family = Nunito: ital, wght @ 1300 & display = intercambiar "
+    rel=" hoja de estilo ">
+</head>
+
+<body class="fondoIndex">
+
+  <!-- acá empieza la cabecera -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="Logo Soluciones Online"
+            class="img-fluid logoNav"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="servicios.html">Páginas web</a></li>
+                <li><a class="dropdown-item" href="servicios.html">Soporte IT</a></li>
+                <li><a class="dropdown-item" href="servicios.html">Desarrollo de software</a></li>
+                <li><a class="dropdown-item" href="servicios.html">Marketing digital</a></li>
+              </ul>
+            </div>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contactanos.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Acá termina la cabecera -->
+
+
+  <section>
+
+    <h1 class="tituloPri animaTres">Estamos para ayudarte... a un clic de distancia</h1>
+    <h2 class="titulo animaUno">Comunicate con nosotros</h2>
+
+    <div class="contactoFlex">
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1618860755444!6m8!1m7!1srNQykEz-GTrNxbJasF2b4w!2m2!1d-34.65635345684311!2d-58.67058139527305!3f66.42418704052992!4f24.358765431338455!5f0.7820865974627469"
+        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="redondes"></iframe>
+
+      <ul class="contacto">
+        <li>Dirección: Manuel Rodriguez Fragio 444 (Bs. As., Argentina)</li> <br>
+        <li>Contacto: (+54)1168076800</li> <br>
+        <li>Email: so.tus.solucionesonline@gmail.com</li> <br>
+      </ul>
+
+    </div>
+
+    <section class="contenedorNosotros">
+
+      <div class="cajaFormulario">
+        <h3 class="contacto text-center">Formulario de contacto</h3>
+
+        <form class="container">
+
+          <div class="form-group col-md-4 mb-3">
+            <label for="first_name">Ingrese su nombre o empresa</label>
+            <input id="first_name" name="first_name" type="text" class="form-control" placeholder=" Nombre o empresa"
+              required>
+          </div>
+
+          <div class="form-group col-md-4 mb-3">
+            <label for="email">Ingrese su email</label>
+            <input id="email" type="email" class="form-control" placeholder="Email" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+
+          <div class="form-group col-md-4 mb-3">
+            <label for="phone">Ingrese su teléfono de contacto</label>
+            <input id="phone" type="tel" class="form-control" placeholder="Teléfono de contacto">
+          </div>
+
+          <span>Servicios sobre los que desea información</span>
+          <div class="form-group mb-3">
+            <label for="page">Páginas web</label>
+            <input id="page" type="checkbox" name="webPage">
+
+            <label for="Desarrollo">Desarrollo de software</label>
+            <input id="Desarrollo" type="checkbox" name="desarrolloSoftware">
+
+            <label for="marketing">Marketing digital</label>
+            <input id="marketing" type="checkbox" name="marketingDigital">
+          </div>
+
+          <span>¿Cómo nos conoció?</span>
+          <div class="form-group mb-3">
+            <label for="conoce"></label>
+            <select id="conoce">
+              <option value="ar">Internet</option>
+              <option value="co">Redes sociales</option>
+              <option value="me">Me contó mi amigo Coder</option>
+              <option value="me">Otro</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Escriba aquí su mensaje, lo contactaremos a la
+              brevedad:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <span>¿Desea suscribirse a nuestro newsletter?</span> <br>
+          <div class="form-group mb-3">
+            <label for="quiere">Si</label>
+            <input id="quiere" type="radio" name="newsletter">
+
+            <label for="noquiere">No</label>
+            <input id="noquiere" type="radio" name="newsletter">
+          </div>
+
+          <div class="form-group mb-3">
+            <label></label>
+            <input type="submit" class="btn btn-lg btn-dark text-white" value="Enviar">
+            <input type="reset" class="btn btn-lg btn-dark text-white" value="Borrar">
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+
+  </section>
+
+  <!--Acá empieza el pie de página-->
+
+  <footer class="container-fluid background bg-dark cajaPie">
+
+    <div class="contenedorPie">
+      <h5 class="contenedorPie__items contenedorPie__items--itemsColor">© Soluciones Online 2021</h5>
+      <h6 class="contenedorPie__items contenedorPie__items--itemsColor">Todos los derechos reservados</h6>
+    </div>
+
+    <div class="contenedorPie">
+      <ul>
+        <li class="contenedorPie__items"><a href="../index.html" class="contenedorPie__items--itemsColor">Home</a></li>
+        <li class="contenedorPie__items"><a href="nosotros.html" class="contenedorPie__items--itemsColor">Nosotros<a>
+        </li>
+        <li class="contenedorPie__items"><a href="servicios.html" class="contenedorPie__items--itemsColor">Servicios</a>
+        </li>
+        <li class="contenedorPie__items"><a href="blog.html" class="contenedorPie__items--itemsColor">Blog</a></li>
+        <li class="contenedorPie__items"><a href="contactanos.html"
+            class="contenedorPie__items--itemsColor">Contactanos</a></li>
+      </ul>
+    </div>
+
+    <div class="contenedorPie">
+      <h5 class="contenedorPie__items contenedorPie__items--itemsColor">Seguinos en las redes sociales</h5>
+      <ul class="contenedorRedes">
+        <li><a href="#"><img src="../img/facebook.svg" class="logoRedes"></a></li>
+        <li><a href="#"><img src="../img/twitter.svg" class="logoRedes"></a></li>
+        <li><a href="#"><img src="../img/instagram.svg" class="logoRedes"></a></li>
+        <li><a href="#"><img src="../img/youtube.svg" class="logoRedes"></a></li>
+        <li><a href="#"><img src="../img/linkedin.svg" class="logoRedes"></a></li>
+        <li><a href="#"><img src="../img/blogger.svg" class="logoRedes"></a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <!--Acá termina el pie de página-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
