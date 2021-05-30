@@ -9,7 +9,7 @@ Todo el index.html está hecho con la metodología de BEM. El resto es uso de cl
 Contiene animaciones, transiciones, y transformaciones, mixin y mucho más.
 Aplica reglas para la optimización del SEO, como los títulos y los encabezados con h1, para cada html, las etiquetas meta para keywords y description, alt para todas las imágenes, y un diseño web adaptable, totalmente responsive.
 
-
+Thanks a lot for reading me... Yours sincerely... "Readme".
 
 
 
