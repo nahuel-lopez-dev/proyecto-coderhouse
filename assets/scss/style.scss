@@ -8,7 +8,7 @@
 $colorUno: black;
 $colorDos: white;
 $colortres: rgba(233, 216, 169, 0.911);
-$colorCuatro: rgb(104, 8, 107);
+$colorCuatro: rgb(102, 24, 109);
 $letraFuente: "Nunito", sans-serif;
 
 /*Acá empiezo a usar BEM*/
@@ -27,10 +27,11 @@ $letraFuente: "Nunito", sans-serif;
 
 /*Secciones del home con BEM*/
 .tituloPri {        /*Este es otro bloque. Se va a usar para todos los h1 en cada .html*/
-    color: $colorCuatro;
-    font-size: 35px;
+    color: $colorUno;
+    font-size: 45px;
     font-weight: bold;
     text-align: center;
+    text-shadow: 1.5px 1.5px 0.5px grey;
     font-family: $letraFuente;
     margin: 30px;
 }
@@ -89,7 +90,7 @@ $letraFuente: "Nunito", sans-serif;
 
 .caja__Titulo {     /*Este es otro elemento del bloque caja*/
     color: $colorUno;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 40px;
     font-family: $letraFuente;
@@ -287,6 +288,10 @@ $letraFuente: "Nunito", sans-serif;
     display: flex;
     flex-direction: row;
     margin: 0 20px;
+}
+
+.mapaContacto {
+    border-radius: 10px;
 }
 
 /*Transición*/
@@ -544,6 +549,6 @@ $letraFuente: "Nunito", sans-serif;
 }
 
 .cajaFormulario {
-    @include crearBordes(darkgrey, 5px, black);
+    @include crearBordes($colorCuatro, 5px, black);
     max-width: 80vw;
 }

@@ -20,10 +20,11 @@
 /*Secciones del home con BEM*/
 .tituloPri {
   /*Este es otro bloque. Se va a usar para todos los h1 en cada .html*/
-  color: #68086b;
-  font-size: 35px;
+  color: black;
+  font-size: 45px;
   font-weight: bold;
   text-align: center;
+  text-shadow: 1.5px 1.5px 0.5px grey;
   font-family: "Nunito", sans-serif;
   margin: 30px; }
 
@@ -82,7 +83,7 @@
 .caja__Titulo {
   /*Este es otro elemento del bloque caja*/
   color: black;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 40px;
   font-family: "Nunito", sans-serif;
@@ -257,6 +258,9 @@
   display: flex;
   flex-direction: row;
   margin: 0 20px; }
+
+.mapaContacto {
+  border-radius: 10px; }
 
 /*Transición*/
 .trans {
@@ -438,7 +442,7 @@
 
 /*Mixin para crear bordes en cajas*/
 .cajaFormulario {
-  border: 5px solid darkgrey;
+  border: 5px solid #66186d;
   border-radius: 5px;
   box-shadow: 0px 0px 5px black;
   max-width: 80vw; }

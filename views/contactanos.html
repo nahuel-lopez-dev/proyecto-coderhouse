@@ -63,14 +63,36 @@
 
   <section>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-danger m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Oferta laboral
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¡¡En búsqueda de un desarrollador web full stack!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Dejanos tu cv al email: so.tus.solucionesonline@gmail.com
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <h1 class="tituloPri animaTres">Estamos para ayudarte... a un clic de distancia</h1>
     <h2 class="titulo animaUno">Comunicate con nosotros</h2>
 
     <div class="contactoFlex">
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!4v1618860755444!6m8!1m7!1srNQykEz-GTrNxbJasF2b4w!2m2!1d-34.65635345684311!2d-58.67058139527305!3f66.42418704052992!4f24.358765431338455!5f0.7820865974627469"
-        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="redondes"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1618860755444!6m8!1m7!1srNQykEz-GTrNxbJasF2b4w!2m2!1d-34.65635345684311!2d-58.67058139527305!3f66.42418704052992!4f24.358765431338455!5f0.7820865974627469"
+        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapaContacto"></iframe>
 
       <ul class="contacto">
         <li>Dirección: Manuel Rodriguez Fragio 444 (Bs. As., Argentina)</li> <br>
@@ -144,8 +166,8 @@
 
           <div class="form-group mb-3">
             <label></label>
-            <input type="submit" class="btn btn-lg btn-dark text-white" value="Enviar">
-            <input type="reset" class="btn btn-lg btn-dark text-white" value="Borrar">
+            <input type="submit" class="btn btn-lg btn-dark text-white m-3" value="Enviar">
+            <input type="reset" class="btn btn-lg btn-dark text-white m-3" value="Borrar">
           </div>
 
         </form>
