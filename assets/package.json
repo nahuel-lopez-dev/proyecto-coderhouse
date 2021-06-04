@@ -1,14 +1,14 @@
 {
-  "name": "assets",
+  "name": "proyecto-coderhouse",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este es mi proyecto, para el curso de desarrollo web, de la carrera de desarrollo web full stack de Coderhouse. Es una página de servicios de software y marketing digital.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
   "watch-css": "nodemon -e scss -x \"npm run build-css\""  
   },
-  "author": "",
+  "author": "Nahuel Lopez",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.0",
