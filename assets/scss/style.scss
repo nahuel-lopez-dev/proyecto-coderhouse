@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 /*Variables globales*/
 $colorUno: black;
 $colorDos: white;
@@ -12,7 +11,6 @@ $colorCuatro: rgb(102, 24, 109);
 $letraFuente: "Nunito", sans-serif;
 
 /*Acá empiezo a usar BEM*/
-
 .fondoIndex {   /*Esto es un bloque*/
     background-image: linear-gradient(to right bottom, rgb(253, 253, 253), rgb(220, 218, 250));
     background-size: cover;
@@ -26,14 +24,15 @@ $letraFuente: "Nunito", sans-serif;
 }
 
 /*Secciones del home con BEM*/
-.tituloPri {        /*Este es otro bloque. Se va a usar para todos los h1 en cada .html*/
+.tituloPrincipal {        /*Este es un bloque*/
     color: $colorUno;
     font-size: 45px;
     font-weight: bold;
     text-align: center;
     text-shadow: 1.5px 1.5px 0.5px grey;
     font-family: $letraFuente;
-    margin: 30px;
+    position: absolute;
+    margin-top: 7vh;
 }
 
 .subtitulo {        /*Este es otro bloque.*/
@@ -64,6 +63,17 @@ $letraFuente: "Nunito", sans-serif;
     margin: 10px 30px;
 }
 
+.cajaHome {         /*Este es otro bloque*/
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.cajaHome__ImgHome {    /*Este es un elemento del bloque caja*/
+    height: auto;
+    width: 100vw;
+}
+
 .caja {         /*Este es otro bloque*/
     display: flex;
     flex-direction: column;
@@ -71,17 +81,9 @@ $letraFuente: "Nunito", sans-serif;
     text-align: center;
     align-items:center;
     align-content: center;
-    margin: 20px;
 }
 
-.caja__ImgHome {    /*Este es un elemento del bloque caja*/
-    height: auto;
-    width: 50vw;
-    border-radius: 20px;
-    margin-right: 20px;
-}
-
-.caja__ImgServ {    /*Este es otro elemento del bloque caja*/
+.caja__ImgServ {    /*Este es un elemento del bloque caja*/
     height: auto;
     width: 30vw;
     margin: 10px;
@@ -118,8 +120,7 @@ $letraFuente: "Nunito", sans-serif;
     font-family: $letraFuente;
 }
 
-
-.contenedorPie__items--itemsColor {      /*Este es un modificador del elemento del bloque contenedorPie*/
+.contenedorPie__items--itemsColor {     /*Este es un modificador del elemento del bloque contenedorPie*/
     color: $colortres;
     text-decoration: none;
 }
@@ -138,6 +139,16 @@ $letraFuente: "Nunito", sans-serif;
 }
 
 /*Acá termino de usar BEM*/
+
+.tituloPri {        /*Se va a usar para todos los h1 en cada .html, excepto el del index*/
+    color: $colorUno;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 0.5px grey;
+    font-family: $letraFuente;
+    margin: 30px;
+}
 
 .decoLink {
     text-decoration: none;
@@ -421,6 +432,11 @@ $letraFuente: "Nunito", sans-serif;
 
 @media(max-width: 1024px) {
     
+    .tituloPrincipal {
+        font-size: 30px;
+        margin-top: 5vh;
+    }
+
     .tituloPri {
         font-size: 30px;        
     }
@@ -474,6 +490,11 @@ $letraFuente: "Nunito", sans-serif;
 
 @media(max-width: 480px) {
 
+    .tituloPrincipal {
+        font-size: 18px;
+        margin-top: 1vh;
+    }
+
     .tituloPri {
         font-size: 20px;        
     }
@@ -481,6 +502,11 @@ $letraFuente: "Nunito", sans-serif;
     .caja__Titulo {
         font-size: 15px;
         line-height: 20px;
+    }
+
+    .caja__ImgServ {    /*Este es otro elemento del bloque caja*/
+        height: auto;
+        width: 80vw;
     }
     
     .subtitulo {

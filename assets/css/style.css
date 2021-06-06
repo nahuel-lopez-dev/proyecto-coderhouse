@@ -18,15 +18,16 @@
   margin-left: 40px; }
 
 /*Secciones del home con BEM*/
-.tituloPri {
-  /*Este es otro bloque. Se va a usar para todos los h1 en cada .html*/
+.tituloPrincipal {
+  /*Este es un bloque*/
   color: black;
   font-size: 45px;
   font-weight: bold;
   text-align: center;
   text-shadow: 1.5px 1.5px 0.5px grey;
   font-family: "Nunito", sans-serif;
-  margin: 30px; }
+  position: absolute;
+  margin-top: 7vh; }
 
 .subtitulo {
   /*Este es otro bloque.*/
@@ -56,6 +57,17 @@
   align-content: center;
   margin: 10px 30px; }
 
+.cajaHome {
+  /*Este es otro bloque*/
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.cajaHome__ImgHome {
+  /*Este es un elemento del bloque caja*/
+  height: auto;
+  width: 100vw; }
+
 .caja {
   /*Este es otro bloque*/
   display: flex;
@@ -63,18 +75,10 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  align-content: center;
-  margin: 20px; }
-
-.caja__ImgHome {
-  /*Este es un elemento del bloque caja*/
-  height: auto;
-  width: 50vw;
-  border-radius: 20px;
-  margin-right: 20px; }
+  align-content: center; }
 
 .caja__ImgServ {
-  /*Este es otro elemento del bloque caja*/
+  /*Este es un elemento del bloque caja*/
   height: auto;
   width: 30vw;
   margin: 10px;
@@ -129,6 +133,16 @@
   padding: 10px; }
 
 /*Acá termino de usar BEM*/
+.tituloPri {
+  /*Se va a usar para todos los h1 en cada .html, excepto el del index*/
+  color: black;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1.5px 1.5px 0.5px grey;
+  font-family: "Nunito", sans-serif;
+  margin: 30px; }
+
 .decoLink {
   text-decoration: none; }
 
@@ -373,6 +387,9 @@
   animation-delay: 1s; }
 
 @media (max-width: 1024px) {
+  .tituloPrincipal {
+    font-size: 30px;
+    margin-top: 5vh; }
   .tituloPri {
     font-size: 30px; }
   .caja__Titulo {
@@ -401,11 +418,18 @@
     margin: 10px 5px; } }
 
 @media (max-width: 480px) {
+  .tituloPrincipal {
+    font-size: 18px;
+    margin-top: 1vh; }
   .tituloPri {
     font-size: 20px; }
   .caja__Titulo {
     font-size: 15px;
     line-height: 20px; }
+  .caja__ImgServ {
+    /*Este es otro elemento del bloque caja*/
+    height: auto;
+    width: 80vw; }
   .subtitulo {
     font-size: 15px;
     line-height: 20px;
