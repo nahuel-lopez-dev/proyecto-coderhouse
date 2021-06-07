@@ -6,7 +6,7 @@
 /*Variables globales*/
 $colorUno: black;
 $colorDos: white;
-$colortres: rgba(233, 216, 169, 0.911);
+$colortres: lightgrey;
 $colorCuatro: rgb(102, 24, 109);
 $letraFuente: "Nunito", sans-serif;
 
@@ -55,6 +55,14 @@ $letraFuente: "Nunito", sans-serif;
     position: absolute;
     bottom: 0;
     text-shadow: 1.5px 1.5px 0.5px grey;
+}
+
+.cajaDark {
+    max-width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .subtitulo {        /*Este es otro bloque.*/
