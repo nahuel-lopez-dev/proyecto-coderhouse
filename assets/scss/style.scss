@@ -102,8 +102,9 @@ $letraFuente: "Nunito", sans-serif;
     align-content: center;
     border: 1px solid grey;
     border-radius: 10px;
-    box-shadow: 4px 4px grey;
+    box-shadow: 5px 5px 15px 5px #484848;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .caja__ImgServ {    /*Este es un elemento del bloque caja*/
@@ -196,9 +197,8 @@ $letraFuente: "Nunito", sans-serif;
     color: $colorDos;
     font-size: 30px;
     font-weight: bold;
-    line-height: 50px;
     font-family: $letraFuente;
-    margin: 20px;
+    margin: 15px;
     text-align: center;
     padding-top: 5vh;
 }
@@ -206,8 +206,7 @@ $letraFuente: "Nunito", sans-serif;
 .parrafoNosotros {
     color: $colorDos;
     font-size: 20px;
-    font-weight: bold;
-    line-height: 40px;
+    line-height: 30px;
     font-family: $letraFuente;
     text-align: center;   
 }
@@ -224,14 +223,13 @@ $letraFuente: "Nunito", sans-serif;
 .parrafo {
     color: $colorUno;
     font-size: 20px;
-    font-weight: bold;
     line-height: 40px;
     font-family: $letraFuente;
     text-align: center;    
 }
 
 .iconStyle {
-    height: 75px;   
+    height: 70px;   
 }
 
 .contenedorPilares {
@@ -531,7 +529,7 @@ $letraFuente: "Nunito", sans-serif;
     }
     
     .caja__Titulo {
-        font-size: 15px;
+        font-size: 20px;
         line-height: 20px;
     }
 
@@ -561,11 +559,11 @@ $letraFuente: "Nunito", sans-serif;
     }
 
     .tituloNosotros {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .parrafoNosotros {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .titulo {
@@ -574,7 +572,7 @@ $letraFuente: "Nunito", sans-serif;
     }
 
     .parrafo {
-        font-size: 10px;
+        font-size: 15px;
         line-height: 20px;
     }
 
