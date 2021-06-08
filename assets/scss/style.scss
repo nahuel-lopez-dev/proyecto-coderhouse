@@ -9,6 +9,18 @@ $colorDos: white;
 $colortres: lightgrey;
 $colorCuatro: rgb(102, 24, 109);
 $letraFuente: "Nunito", sans-serif;
+/*Variables cambiadas en bootstrap*/
+$primary: #12181f;
+$danger: #c0130a;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+
+
+
+@import "../bootstrap/scss/bootstrap.scss";
 
 /*Acá empiezo a usar BEM*/
 .fondoIndex {   /*Esto es un bloque*/
