@@ -7129,7 +7129,7 @@ textarea.form-control-lg {
 
 .contenedorPie__items--itemsColor {
   /*Este es un modificador del elemento del bloque contenedorPie*/
-  color: lightgrey;
+  color: #b8b5b5;
   text-decoration: none; }
 
 .contenedorRedes {
@@ -7218,7 +7218,9 @@ textarea.form-control-lg {
   margin: 25px;
   height: auto;
   width: 30vw;
-  text-align: center; }
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px #484848; }
 
 .cajitaServicio {
   margin: 25px;
@@ -7238,10 +7240,10 @@ textarea.form-control-lg {
 .parrafoServicio {
   color: black;
   font-size: 25px;
-  font-weight: bold;
   line-height: 40px;
   font-family: "Nunito", sans-serif;
-  margin: 20px; }
+  margin: 20px;
+  text-align: center; }
 
 .serviciosFlex {
   display: flex;
@@ -7258,7 +7260,6 @@ textarea.form-control-lg {
 .parrafoBlog {
   color: black;
   font-size: 25px;
-  font-weight: bold;
   line-height: 40px;
   font-family: "Nunito", sans-serif;
   text-align: center;
@@ -7273,8 +7274,7 @@ textarea.form-control-lg {
   color: black;
   font-size: 25px;
   font-family: "Nunito", sans-serif;
-  margin: 30px;
-  font-weight: bold; }
+  margin: 30px; }
 
 .contactoFlex {
   display: flex;
@@ -7297,27 +7297,22 @@ textarea.form-control-lg {
 @keyframes efectoUno {
   0% {
     font-family: "Nunito", sans-serif;
-    margin: 20px;
     /*Propiedades CSS*/ }
   20% {
     font-family: "Nunito", sans-serif;
-    margin-left: 50px; }
+    color: rgba(233, 216, 169, 0.911); }
   40% {
-    color: lightgrey;
     font-family: "Nunito", sans-serif;
-    margin-left: 80px; }
+    color: rgba(233, 216, 169, 0.911); }
   60% {
-    color: lightgrey;
     font-family: "Nunito", sans-serif;
-    margin-left: 110px; }
+    color: rgba(233, 216, 169, 0.911); }
   80% {
-    color: lightgrey;
     font-family: "Nunito", sans-serif;
-    margin-left: 140px; }
+    color: rgba(233, 216, 169, 0.911); }
   100% {
     color: black;
     font-family: "Nunito", sans-serif;
-    margin: 20px;
     /*Propiedades CSS*/ }
   /*Final de la animación*/ }
 
@@ -7326,38 +7321,32 @@ textarea.form-control-lg {
   /*Nombre del keyframe*/
   animation-iteration-count: 2;
   animation-timing-function: ease-in;
-  animation-duration: 0.5s;
-  animation-delay: 1s; }
+  animation-duration: 0.35s;
+  animation-delay: 0.7s; }
 
 @keyframes efectoDos {
   0% {
     font-family: "Nunito", sans-serif;
-    margin: 20px;
     /*Propiedades CSS*/ }
   20% {
     transform: rotate(45deg);
-    font-family: "Nunito", sans-serif;
-    margin-left: 50px; }
+    font-family: "Nunito", sans-serif; }
   40% {
     transform: rotate(90deg);
-    color: lightgrey;
-    font-family: "Nunito", sans-serif;
-    margin-left: 80px; }
+    color: #b8b5b5;
+    font-family: "Nunito", sans-serif; }
   60% {
     transform: rotate(180deg);
-    color: lightgrey;
-    font-family: "Nunito", sans-serif;
-    margin-left: 110px; }
+    color: #b8b5b5;
+    font-family: "Nunito", sans-serif; }
   80% {
     transform: rotate(270deg);
-    color: lightgrey;
-    font-family: "Nunito", sans-serif;
-    margin-left: 140px; }
+    color: #b8b5b5;
+    font-family: "Nunito", sans-serif; }
   100% {
     transform: rotate(360deg);
     color: black;
     font-family: "Nunito", sans-serif;
-    margin: 20px;
     /*Propiedades CSS*/ }
   /*Final de la animación*/ }
 
@@ -7367,31 +7356,6 @@ textarea.form-control-lg {
   animation-iteration-count: 2;
   animation-timing-function: ease-in;
   animation-duration: 0.5s;
-  animation-delay: 1s; }
-
-@keyframes efectoTres {
-  0% {
-    transform: skew(30deg);
-    /*Propiedades CSS*/ }
-  20% {
-    transform: skewX(-30deg); }
-  40% {
-    transform: skewX(30deg); }
-  60% {
-    transform: skewX(-30deg); }
-  80% {
-    transform: skewX(30deg); }
-  100% {
-    transform: skewX(0deg);
-    /*Propiedades CSS*/ }
-  /*Final de la animación*/ }
-
-.animaTres {
-  animation-name: efectoTres;
-  /*Nombre del keyframe*/
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
   animation-delay: 1s; }
 
 @media (max-width: 1024px) {
@@ -7455,7 +7419,7 @@ textarea.form-control-lg {
   .cajita {
     width: 100vw; }
   .articulo {
-    width: 60vw; }
+    width: 90vw; }
   .tituloNosotros {
     font-size: 20px; }
   .parrafoNosotros {
@@ -7469,10 +7433,10 @@ textarea.form-control-lg {
   .tituloServicio {
     font-size: 15px; }
   .parrafoServicio {
-    font-size: 10px;
+    font-size: 15px;
     line-height: 20px; }
   .parrafoBlog {
-    font-size: 10px;
+    font-size: 15px;
     line-height: 20px; }
   .contacto {
     font-size: 15px;

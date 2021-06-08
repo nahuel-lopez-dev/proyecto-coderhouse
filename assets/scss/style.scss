@@ -6,8 +6,9 @@
 /*Variables globales*/
 $colorUno: black;
 $colorDos: white;
-$colortres: lightgrey;
+$colortres: rgb(184, 181, 181);
 $colorCuatro: rgb(102, 24, 109);
+$colorCinco: rgba(233, 216, 169, 0.911);
 $letraFuente: "Nunito", sans-serif;
 /*Variables cambiadas en bootstrap*/
 $primary: #12181f;
@@ -257,6 +258,8 @@ $theme-colors: (
     height: auto;
     width: 30vw;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #484848;
 }
 
 .cajitaServicio {
@@ -279,10 +282,10 @@ $theme-colors: (
 .parrafoServicio {
     color: $colorUno;
     font-size: 25px;
-    font-weight: bold;
     line-height: 40px;
     font-family: $letraFuente;
     margin: 20px;
+    text-align: center;
 }
 
 .serviciosFlex {
@@ -302,7 +305,6 @@ $theme-colors: (
 .parrafoBlog {
     color: $colorUno;
     font-size: 25px;
-    font-weight: bold;
     line-height: 40px;
     font-family: $letraFuente;
     text-align: center;
@@ -321,7 +323,6 @@ $theme-colors: (
     font-size: 25px;
     font-family: $letraFuente;
     margin: 30px;
-    font-weight: bold;
 }
 
 .contactoFlex {
@@ -348,32 +349,27 @@ $theme-colors: (
 /*Línea de tiempo*/
 @keyframes efectoUno {
     0% {
-        font-family: $letraFuente;
-        margin: 20px;     /*Propiedades CSS*/
+        font-family: $letraFuente;     /*Propiedades CSS*/
     }
     20% {
         font-family: $letraFuente;
-        margin-left: 50px;
+        color: $colorCinco;
     }
     40% {
-        color: $colortres;
         font-family: $letraFuente;
-        margin-left: 80px;
+        color: $colorCinco;
     }
     60% {
-        color: $colortres;
         font-family: $letraFuente;
-        margin-left: 110px;
+        color: $colorCinco;
     }
     80% {
-        color: $colortres;
         font-family: $letraFuente;
-        margin-left: 140px;
+        color: $colorCinco;
     }
     100% {
         color: $colorUno;
-        font-family: $letraFuente;
-        margin: 20px;   /*Propiedades CSS*/
+        font-family: $letraFuente;   /*Propiedades CSS*/
     } /*Final de la animación*/
 }
 
@@ -381,43 +377,37 @@ $theme-colors: (
     animation-name: efectoUno; /*Nombre del keyframe*/
     animation-iteration-count: 2;
     animation-timing-function: ease-in;
-    animation-duration: 0.5s;
-    animation-delay: 1s;
+    animation-duration: 0.35s;
+    animation-delay: 0.7s;
 }
 
 @keyframes efectoDos {
     0% {
-        font-family: $letraFuente;
-        margin: 20px;     /*Propiedades CSS*/
+        font-family: $letraFuente;   /*Propiedades CSS*/
     }
     20% {
         transform: rotate(45deg);
         font-family: $letraFuente;
-        margin-left: 50px;
     }
     40% {
         transform: rotate(90deg);
         color: $colortres;
         font-family: $letraFuente;
-        margin-left: 80px;
     }
     60% {
         transform: rotate(180deg);
         color: $colortres;
         font-family: $letraFuente;
-        margin-left: 110px;
     }
     80% {
         transform: rotate(270deg);
         color: $colortres;
         font-family: $letraFuente;
-        margin-left: 140px;
     }
     100% {
         transform: rotate(360deg);
         color: $colorUno;
-        font-family: $letraFuente;
-        margin: 20px;   /*Propiedades CSS*/
+        font-family: $letraFuente;   /*Propiedades CSS*/
     } /*Final de la animación*/
 }
 
@@ -426,36 +416,6 @@ $theme-colors: (
     animation-iteration-count: 2;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
-    animation-delay: 1s;
-}
-
-@keyframes efectoTres {
-    0% {
-        transform: skew(30deg);     /*Propiedades CSS*/
-    }
-    20% {
-        transform: skewX(-30deg);
-    }
-    40% {
-        transform: skewX(30deg);
-    }
-    60% {
-        transform: skewX(-30deg);
-    }
-    80% {
-        transform: skewX(30deg);
-    }
-    100% {
-        transform: skewX(0deg);
-           /*Propiedades CSS*/
-    } /*Final de la animación*/
-}
-
-.animaTres {
-    animation-name: efectoTres; /*Nombre del keyframe*/
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
     animation-delay: 1s;
 }
 
@@ -567,7 +527,7 @@ $theme-colors: (
     }
 
     .articulo {
-        width: 60vw;
+        width: 90vw;
     }
 
     .tituloNosotros {
@@ -593,12 +553,12 @@ $theme-colors: (
     }
 
     .parrafoServicio {
-        font-size: 10px;
+        font-size: 15px;
         line-height: 20px;
     }
 
     .parrafoBlog {
-        font-size: 10px;
+        font-size: 15px;
         line-height: 20px;
     }
 
