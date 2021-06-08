@@ -231,6 +231,7 @@ $theme-colors: (
     line-height: 50px;
     font-family: $letraFuente;
     margin: 20px;
+    text-align: center;
 }
 
 .parrafo {
@@ -263,10 +264,11 @@ $theme-colors: (
 }
 
 .cajitaServicio {
-    margin: 25px;
     height: auto;
-    width: 60vw;
+    width: 80vw;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #484848;
 }
 
 .tituloServicio {
@@ -292,6 +294,8 @@ $theme-colors: (
     display: flex;
     flex-direction:row;
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgServicio {
@@ -453,7 +457,6 @@ $theme-colors: (
 
     .titulo {
         font-size: 20px;
-        text-align: center;
     }
 
 
@@ -572,10 +575,10 @@ $theme-colors: (
 @mixin crearBordes($color, $size, $shadow){
     border:$size solid $color;
     border-radius: $size;
-    box-shadow: 0px 0px $size $shadow;
+    box-shadow: 5px 5px $size $shadow;
 }
 
 .cajaFormulario {
-    @include crearBordes($colorCuatro, 5px, black);
-    max-width: 80vw;
+    @include crearBordes($colorCuatro, 5px, #484848);
+    max-width: 100vw;
 }
