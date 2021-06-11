@@ -7141,9 +7141,10 @@ textarea.form-control-lg {
 .logoRedes {
   /*Este es otro bloque*/
   height: auto;
-  width: 50px;
+  width: 55px;
   margin: 10px;
-  padding: 10px; }
+  padding: 8px;
+  border-radius: 50%; }
 
 /*Acá termino de usar BEM*/
 .tituloPri {
@@ -7155,9 +7156,6 @@ textarea.form-control-lg {
   text-shadow: 1.5px 1.5px 0.5px grey;
   font-family: "Nunito", sans-serif;
   margin: 30px; }
-
-.decoLink {
-  text-decoration: none; }
 
 .contenedorNosotros {
   display: flex;
@@ -7256,8 +7254,8 @@ textarea.form-control-lg {
 
 .imgServicio {
   height: auto;
-  max-width: 70vw;
-  margin: 20px;
+  width: 50vw;
+  margin: 10px;
   border-radius: 10px;
   align-self: center; }
 
@@ -7276,9 +7274,9 @@ textarea.form-control-lg {
 
 .contacto {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Nunito", sans-serif;
-  margin: 30px; }
+  margin: 25px; }
 
 .contactoFlex {
   display: flex;
@@ -7387,12 +7385,14 @@ textarea.form-control-lg {
     font-size: 25px; }
   .parrafoServicio {
     font-size: 15px; }
+  .imgServicio {
+    width: 65vw; }
   .parrafoBlog {
     font-size: 20px; }
   .contactoFlex {
     display: flex;
     flex-direction: column;
-    margin: 10px 5px; } }
+    margin: 15px 10px; } }
 
 @media (max-width: 480px) {
   .logoNav {
@@ -7419,6 +7419,10 @@ textarea.form-control-lg {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+  .cajitaServicio {
+    width: 90vw; }
+  .imgServicio {
+    width: 90vw; }
   .cajita {
     width: 100vw; }
   .articulo {
@@ -7442,7 +7446,7 @@ textarea.form-control-lg {
     font-size: 15px;
     line-height: 20px; }
   .contacto {
-    font-size: 15px;
+    font-size: 10px;
     margin: 10px 0px; } }
 
 /*Mixin para crear bordes en cajas*/
