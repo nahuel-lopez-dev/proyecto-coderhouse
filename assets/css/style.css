@@ -7007,7 +7007,18 @@ textarea.form-control-lg {
   /*Este es otro bloque*/
   width: 13vw;
   height: auto;
-  margin-left: 40px; }
+  margin-left: 5vw; }
+
+.sloganNav {
+  /*Este es otro bloque*/
+  width: 25vw;
+  height: auto;
+  margin-left: 0.7vw; }
+
+.logoFooter {
+  width: 10vw;
+  height: auto;
+  margin-left: 5vw; }
 
 /*Secciones del home con BEM*/
 .cajaHome {
@@ -7024,16 +7035,17 @@ textarea.form-control-lg {
 .tituloPrincipal {
   /*Este es un bloque*/
   color: black;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: bold;
   text-align: center;
   text-shadow: 1.5px 1.5px 0.5px grey;
   font-family: "Nunito", sans-serif;
   position: absolute;
-  margin-top: 5vh; }
+  margin-top: 5vh;
+  padding: 0 1vw; }
 
 .tituloSecundario {
-  /*Este es otro elemento del bloque caja*/
+  /*.................. Revisar para sacar .......... Este es otro elemento del bloque caja*/
   color: black;
   font-size: 35px;
   font-weight: bold;
