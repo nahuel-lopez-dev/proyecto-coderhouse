@@ -7007,18 +7007,17 @@ textarea.form-control-lg {
   /*Este es otro bloque*/
   width: 13vw;
   height: auto;
-  margin-left: 5vw; }
+  margin-left: 4vw; }
 
 .sloganNav {
   /*Este es otro bloque*/
   width: 25vw;
   height: auto;
-  margin-left: 0.7vw; }
+  margin-left: 0.5vw; }
 
 .logoFooter {
-  width: 10vw;
-  height: auto;
-  margin-left: 5vw; }
+  width: 13vw;
+  height: auto; }
 
 /*Secciones del home con BEM*/
 .cajaHome {
@@ -7045,22 +7044,22 @@ textarea.form-control-lg {
   padding: 0 1vw; }
 
 .tituloSecundario {
-  /*.................. Revisar para sacar .......... Este es otro elemento del bloque caja*/
-  color: black;
+  /*Este es otro elemento del bloque caja*/
+  color: rgba(233, 216, 169, 0.911);
   font-size: 35px;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  text-shadow: 1.5px 1.5px 0.5px grey; }
+  text-shadow: 1.5px 1.5px 0.5px grey;
+  padding: 5vh;
+  justify-content: center; }
 
 .cajaDark {
   max-width: 100vw;
-  height: 30vh;
+  height: 50vh;
+  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column;
+  justify-content: flex-start; }
 
 .subtitulo {
   /*Este es otro bloque.*/
@@ -7124,7 +7123,7 @@ textarea.form-control-lg {
   /*Este es otro bloque*/
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .contenedorPie {
   /*Este es otro bloque*/
@@ -7372,7 +7371,17 @@ textarea.form-control-lg {
   animation-duration: 0.5s;
   animation-delay: 1s; }
 
-@media (max-width: 1024px) {
+@media (max-width: 991.98px) {
+  .logoNav {
+    width: 15vw;
+    margin-left: 3vw; }
+  .sloganNav {
+    /*Este es otro bloque*/
+    width: 32vw;
+    height: auto;
+    margin-left: 0; }
+  .logoFooter {
+    width: 18vw; }
   .tituloPrincipal {
     font-size: 30px;
     margin-top: 5vh; }
@@ -7406,21 +7415,32 @@ textarea.form-control-lg {
     flex-direction: column;
     margin: 15px 10px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 575.98px) {
   .logoNav {
-    width: 25vw; }
+    width: 25vw;
+    margin-left: 1vw; }
+  .sloganNav {
+    width: 32vw;
+    height: auto;
+    margin-left: 0; }
+  .logoFooter {
+    width: 30vw; }
   .tituloPrincipal {
     font-size: 20px;
     margin-top: 1vh; }
+  .cajaDark {
+    height: 40vh;
+    justify-content: center;
+    padding-bottom: 20px; }
   .tituloSecundario {
-    font-size: 15px; }
+    font-size: 18px;
+    padding: 5vh; }
   .tituloPri {
     font-size: 20px; }
   .caja__Titulo {
     font-size: 20px;
     line-height: 20px; }
   .caja__ImgServ {
-    /*Este es otro elemento del bloque caja*/
     height: auto;
     width: 80vw; }
   .subtitulo {
