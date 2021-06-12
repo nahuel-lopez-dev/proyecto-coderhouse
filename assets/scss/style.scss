@@ -11,7 +11,7 @@ $colorCuatro: rgb(102, 24, 109);
 $colorCinco: rgba(233, 216, 169, 0.911);
 $letraFuente: "Nunito", sans-serif;
 /*Variables cambiadas en bootstrap*/
-$primary: rgb(10, 2, 24);
+$primary: rgb(184, 181, 181);
 $danger: #c0130a;
 
 $theme-colors: (
@@ -340,11 +340,17 @@ $theme-colors: (
 .contactoFlex {
     display: flex;
     flex-direction: row;
-    margin: 0 20px;
+    margin: 20px 20px 0 20px;
 }
 
 .mapaContacto {
     border-radius: 10px;
+}
+
+.cajitaFormulario {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #484848;
 }
 
 /*Transición*/
@@ -595,7 +601,7 @@ $theme-colors: (
     }
 
     .titulo {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 20px;
     }
 
@@ -619,7 +625,7 @@ $theme-colors: (
     }
 
     .contacto {
-        font-size: 10px;
+        font-size: 13px;
         margin: 10px 0px;
     }
 }

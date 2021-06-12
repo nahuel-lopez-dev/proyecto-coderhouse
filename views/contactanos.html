@@ -85,23 +85,22 @@
     </div>
 
     <h1 class="tituloPri animaUno">Estamos para ayudarte... a un clic de distancia</h1>
-    <h2 class="titulo animaDos">Comunicate con nosotros</h2>
-
+    
     <div class="contactoFlex">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5573.008415265268!2d-58.671859045895516!3d-34.65514777022682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe81aba2ac9%3A0x94163c54dbd664af!2sManuel%20Rodr%C3%ADguez%20Fragio%20459%2C%20B1714%20Ituzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1623192399120!5m2!1ses-419!2sar"
-        width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" class="mb-3"></iframe>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5573.008415265268!2d-58.671859045895516!3d-34.65514777022682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe81aba2ac9%3A0x94163c54dbd664af!2sManuel%20Rodr%C3%ADguez%20Fragio%20459%2C%20B1714%20Ituzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1623192399120!5m2!1ses-419!2sar"
+      width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" class="mb-3"></iframe>
       <ul class="contacto">
         <li>Dirección: Manuel Rodriguez Fragio 459 (Bs. As., Argentina)</li> <br>
         <li>Contacto: (+54)1168076800</li> <br>
         <li>Email: so.tus.solucionesonline@gmail.com</li> <br>
       </ul>
     </div>
-
+    
     <section>
+      <h2 class="titulo animaDos">Comunicate con nosotros</h2>
       <div>
-        <h3 class="contacto text-center">Formulario de contacto</h3>
-        <form class="container">
+        <form class="container cajitaFormulario bg-dark">
           <div class="form-group col-md-4 m-3">
             <label for="first_name"></label>
             <input id="first_name" name="first_name" type="text" class="form-control" placeholder=" Nombre o empresa"
@@ -111,44 +110,42 @@
           <div class="form-group col-md-4 m-3">
             <label for="email"></label>
             <input id="email" type="email" class="form-control" placeholder="Email" required>
-            <div id="emailHelp" class="form-text m-1">Nunca compartiremos tu email con nadie más</div>
           </div>
 
-          <span class="p-3">Servicios sobre los que desea información</span>
-          <div class="form-group m-3">
+          <span class="p-3 text-white">Servicios sobre los que desea información</span>
+          <div class="form-group m-3 text-white">
             <label for="page">Páginas web</label>
             <input id="page" type="checkbox" name="webPage">
           </div>
 
-          <div class="form-group m-3">
+          <div class="form-group m-3 text-white">
             <label for="Desarrollo">Desarrollo de software</label>
             <input id="Desarrollo" type="checkbox" name="desarrolloSoftware">
           </div>
 
-          <div class="form-group m-3">
+          <div class="form-group m-3 text-white">
             <label for="marketing">Marketing digital</label>
             <input id="marketing" type="checkbox" name="marketingDigital">
           </div>
 
-          <span class="p-3">¿Cómo nos conoció?</span>
-          <div class="form-group m-3">
+          <span class="p-3 text-white">¿Cómo nos conoció?</span>
+          <div class="form-group m-3 text-white">
             <label for="conoce"></label>
             <select id="conoce">
               <option value="ar">Internet</option>
               <option value="co">Redes sociales</option>
-              <option value="me">Me contó mi amigo Coder</option>
+              <option value="me">Me contó mi amigo "Coder"</option>
               <option value="me">Otro</option>
             </select>
           </div>
 
-          <div class="col-9 m-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Escriba aquí su mensaje, lo contactaremos a la
-              brevedad:</label>
+          <div class="col-md-4 m-3 text-white">
+            <label for="exampleFormControlTextarea1" class="form-label">Escriba aquí su mensaje:</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
 
-          <span class="p-3">¿Desea suscribirse a nuestro newsletter?</span> <br>
-          <div class="form-group m-3">
+          <span class="p-3 text-white">¿Desea suscribirse a nuestro newsletter?</span> <br>
+          <div class="form-group m-3 text-white">
             <label for="quiere">Si</label>
             <input id="quiere" type="radio" name="newsletter">
             <label for="noquiere">No</label>
@@ -156,7 +153,7 @@
           </div>
 
           <div class="col-12 m-3">
-            <div class="form-check">
+            <div class="form-check text-white">
               <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
               <label class="form-check-label" for="invalidCheck2">
                 Estoy de acuerdo con los términos y condiciones del servicio
@@ -166,8 +163,8 @@
 
           <div class="form-group mb-3">
             <label></label>
-            <input type="submit" class="btn btn-lg btn-primary text-white m-3" value="Enviar">
-            <input type="reset" class="btn btn-lg btn-primary text-white m-3" value="Borrar">
+            <input type="submit" class="btn btn-lg btn-primary m-3" value="Enviar">
+            <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Borrar">
           </div>
         </form>
       </div>
