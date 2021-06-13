@@ -351,6 +351,7 @@ $theme-colors: (
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px #484848;
+    max-width: 45vw;
 }
 
 /*Transición*/
@@ -515,6 +516,10 @@ $theme-colors: (
         margin: 15px 10px;
     }
 
+    .cajitaFormulario {
+        max-width: 80vw;
+    }
+
 }
 
 @media(max-width: 575.98px) {
@@ -627,6 +632,10 @@ $theme-colors: (
     .contacto {
         font-size: 13px;
         margin: 10px 0px;
+    }
+
+    .cajitaFormulario {
+        max-width: 92vw;
     }
 }
 

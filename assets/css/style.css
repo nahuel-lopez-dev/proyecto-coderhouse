@@ -7300,7 +7300,8 @@ textarea.form-control-lg {
 .cajitaFormulario {
   margin-bottom: 30px;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px 5px #484848; }
+  box-shadow: 5px 5px 15px 5px #484848;
+  max-width: 45vw; }
 
 /*Transición*/
 .trans {
@@ -7418,7 +7419,9 @@ textarea.form-control-lg {
   .contactoFlex {
     display: flex;
     flex-direction: column;
-    margin: 15px 10px; } }
+    margin: 15px 10px; }
+  .cajitaFormulario {
+    max-width: 80vw; } }
 
 @media (max-width: 575.98px) {
   .logoNav {
@@ -7484,7 +7487,9 @@ textarea.form-control-lg {
     line-height: 20px; }
   .contacto {
     font-size: 13px;
-    margin: 10px 0px; } }
+    margin: 10px 0px; }
+  .cajitaFormulario {
+    max-width: 92vw; } }
 
 /*Mixin para crear bordes en cajas*/
 .cajaFormulario {
