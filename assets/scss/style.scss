@@ -8,7 +8,7 @@ $colorUno: black;
 $colorDos: white;
 $colortres: rgb(184, 181, 181);
 $colorCuatro: rgb(102, 24, 109);
-$colorCinco: rgba(233, 216, 169, 0.911);
+$colorCinco: rgba(211, 174, 72, 0.911);
 $letraFuente: "Nunito", sans-serif;
 /*Variables cambiadas en bootstrap*/
 $primary: rgb(184, 181, 181);
@@ -76,7 +76,6 @@ $theme-colors: (
     font-size: 35px;
     font-weight: bold;
     font-family: $letraFuente;
-    text-shadow: 1.5px 1.5px 0.5px grey;
     padding: 5vh;
     justify-content: center;
 }

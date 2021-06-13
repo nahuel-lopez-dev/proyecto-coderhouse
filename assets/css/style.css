@@ -7045,11 +7045,10 @@ textarea.form-control-lg {
 
 .tituloSecundario {
   /*Este es otro elemento del bloque caja*/
-  color: rgba(233, 216, 169, 0.911);
+  color: rgba(211, 174, 72, 0.911);
   font-size: 35px;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
-  text-shadow: 1.5px 1.5px 0.5px grey;
   padding: 5vh;
   justify-content: center; }
 
@@ -7319,16 +7318,16 @@ textarea.form-control-lg {
     /*Propiedades CSS*/ }
   20% {
     font-family: "Nunito", sans-serif;
-    color: rgba(233, 216, 169, 0.911); }
+    color: rgba(211, 174, 72, 0.911); }
   40% {
     font-family: "Nunito", sans-serif;
-    color: rgba(233, 216, 169, 0.911); }
+    color: rgba(211, 174, 72, 0.911); }
   60% {
     font-family: "Nunito", sans-serif;
-    color: rgba(233, 216, 169, 0.911); }
+    color: rgba(211, 174, 72, 0.911); }
   80% {
     font-family: "Nunito", sans-serif;
-    color: rgba(233, 216, 169, 0.911); }
+    color: rgba(211, 174, 72, 0.911); }
   100% {
     color: black;
     font-family: "Nunito", sans-serif;
