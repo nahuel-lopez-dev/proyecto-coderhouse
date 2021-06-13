@@ -7,19 +7,17 @@
 $colorUno: black;
 $colorDos: white;
 $colortres: rgb(184, 181, 181);
-$colorCuatro: rgb(102, 24, 109);
-$colorCinco: rgba(211, 174, 72, 0.911);
+$colorCuatro: rgb(97, 8, 133);
+$colorCinco: #ffbe50;
 $letraFuente: "Nunito", sans-serif;
+$letraFuenteDos: "Gagalin";
 /*Variables cambiadas en bootstrap*/
 $primary: rgb(184, 181, 181);
 $danger: #c0130a;
-
 $theme-colors: (
   "primary": $primary,
   "danger": $danger
 );
-
-
 
 @import "../bootstrap/scss/bootstrap.scss";
 
@@ -59,13 +57,23 @@ $theme-colors: (
     width: 100vw;
 }
 
+.cajaHome::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .tituloPrincipal {        /*Este es un bloque*/
-    color: $colorUno;
-    font-size: 50px;
+    color: $colorCinco;
+    font-size: 3.125rem;
     font-weight: bold;
     text-align: center;
     text-shadow: 1.5px 1.5px 0.5px grey;
-    font-family: $letraFuente;
+    font-family: $letraFuenteDos;
     position: absolute;
     margin-top: 5vh;
     padding: 0 1vw;
@@ -188,7 +196,7 @@ $theme-colors: (
 /*Acá termino de usar BEM*/
 
 .tituloPri {        /*Se va a usar para todos los h1 en cada .html, excepto el del index*/
-    color: $colorUno;
+    color: $colorCinco;
     font-size: 45px;
     font-weight: bold;
     text-align: center;
