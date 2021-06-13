@@ -39,7 +39,7 @@ $theme-colors: (
 .sloganNav {      /*Este es otro bloque*/
     width: 25vw;
     height: auto;
-    margin-left: 0.5vw;
+    margin-left: 0.2vw;
 }
 
 .logoFooter {
@@ -448,7 +448,6 @@ $theme-colors: (
     .sloganNav {      /*Este es otro bloque*/
         width: 32vw;
         height: auto;
-        margin-left: 0;
     }
 
     .logoFooter {
@@ -525,18 +524,18 @@ $theme-colors: (
 @media(max-width: 575.98px) {
 
     .logoNav {
-        width: 25vw;
-        margin-left: 1vw;
+        width: 20vw;
+        margin-left: 0.5vw;
     }
     
     .sloganNav {    
-        width: 32vw;
+        width: 35vw;
         height: auto;
-        margin-left: 0;
+        margin-left: 0.1vw;
     }
 
     .logoFooter {
-        width: 30vw;
+        width: 35vw;
     }
 
     .tituloPrincipal {
