@@ -7043,8 +7043,8 @@ textarea.form-control-lg {
 .tituloPrincipal {
   /*Este es un bloque*/
   color: #ffbe50;
-  font-size: 3.125rem;
-  /* 50px*/
+  font-size: 4rem;
+  /* 64px*/
   font-weight: bold;
   text-align: center;
   text-shadow: 1.5px 1.5px 0.5px grey;
@@ -7056,8 +7056,8 @@ textarea.form-control-lg {
 .tituloSecundario {
   /*Este es otro elemento del bloque caja*/
   color: #ffbe50;
-  font-size: 2.1875rem;
-  /* 35px*/
+  font-size: 3rem;
+  /* 48px*/
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   padding: 5vh;
@@ -7074,7 +7074,7 @@ textarea.form-control-lg {
 .subtitulo {
   /*Este es otro bloque.*/
   color: white;
-  font-size: 1.875rem;
+  font-size: 2rem;
   /* 30px*/
   font-weight: bold;
   font-family: "Nunito", sans-serif;
@@ -7114,7 +7114,7 @@ textarea.form-control-lg {
 .caja__Titulo {
   /*Este es otro elemento del bloque caja*/
   color: black;
-  font-size: 1.875rem;
+  font-size: 2rem;
   /**/
   line-height: 2.5rem;
   font-family: "Nunito", sans-serif;
@@ -7155,8 +7155,7 @@ textarea.form-control-lg {
 .logoRedes {
   /*Este es otro bloque*/
   height: auto;
-  width: 3.4375rem;
-  /*55px*/
+  width: 3.5rem;
   margin: 10px;
   padding: 8px;
   border-radius: 50%; }
@@ -7165,8 +7164,7 @@ textarea.form-control-lg {
 .tituloPri {
   /*Se va a usar para todos los h1 en cada .html, excepto el del index*/
   color: #ffbe50;
-  font-size: 2.8125rem;
-  /*45px*/
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
   text-shadow: 1.5px 1.5px 0.5px grey;
@@ -7178,7 +7176,7 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 0 20px 20px 20px; }
+  margin: 0 1rem 1rem 1rem; }
 
 .videoNosotros {
   height: auto;
@@ -7187,14 +7185,14 @@ textarea.form-control-lg {
   align-items: center;
   align-self: center; }
 
-.tituloNosotros {
+.valores {
   color: white;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
-  margin: 15px;
+  margin: 1rem;
   text-align: center;
-  padding-top: 5vh; }
+  padding-top: 3vh; }
 
 .parrafoNosotros {
   color: white;
@@ -7205,7 +7203,7 @@ textarea.form-control-lg {
 
 .titulo {
   color: black;
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 3.125rem;
   font-family: "Nunito", sans-serif;
@@ -7214,23 +7212,23 @@ textarea.form-control-lg {
 
 .parrafo {
   color: black;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   font-family: "Nunito", sans-serif;
   text-align: center; }
 
 .iconStyle {
-  height: 4.375rem; }
+  height: 4rem; }
 
 .contenedorPilares {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
-  margin: 1.875rem; }
+  margin: 2rem; }
 
 .cajita {
-  margin: 1.5625rem;
+  margin: 1.5rem;
   height: auto;
   width: 30vw;
   text-align: center;
@@ -7245,10 +7243,11 @@ textarea.form-control-lg {
   box-shadow: 5px 5px 15px 5px #484848; }
 
 .tituloServicio {
+  /*...Revisar esta clase a ver si la uso en alguna parte. Podría ser tituloValores......*/
   color: black;
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 3.125rem;
+  line-height: 3rem;
   font-family: "Nunito", sans-serif;
   text-align: start;
   margin: 2.5rem 2.5rem 1.25rem 3.125rem; }
