@@ -7027,7 +7027,7 @@ textarea.form-control-lg {
   position: relative; }
 
 .cajaHome__ImgHome {
-  /*Este es un elemento del bloque caja*/
+  /*Este es un elemento del bloque cajaHome*/
   height: auto;
   width: 100vw; }
 
@@ -7044,18 +7044,20 @@ textarea.form-control-lg {
   /*Este es un bloque*/
   color: #ffbe50;
   font-size: 3.125rem;
+  /* 50px*/
   font-weight: bold;
   text-align: center;
   text-shadow: 1.5px 1.5px 0.5px grey;
-  font-family: "Gagalin";
+  font-family: "Nunito", sans-serif;
   position: absolute;
-  margin-top: 5vh;
+  margin: 4vh 2vw 1vh 2vw;
   padding: 0 1vw; }
 
 .tituloSecundario {
   /*Este es otro elemento del bloque caja*/
   color: #ffbe50;
-  font-size: 35px;
+  font-size: 2.1875rem;
+  /* 35px*/
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   padding: 5vh;
@@ -7072,19 +7074,11 @@ textarea.form-control-lg {
 .subtitulo {
   /*Este es otro bloque.*/
   color: white;
-  font-size: 30px;
+  font-size: 1.875rem;
+  /* 30px*/
   font-weight: bold;
   font-family: "Nunito", sans-serif;
-  line-height: 50px; }
-
-.subtitulo--Izq {
-  /*Este es un modificador del bloque subtitulo*/
-  text-align: left;
-  margin-left: 20px; }
-
-.subtitulo--Cent {
-  /*Este es otro modificador del bloque subtitulo*/
-  text-align: center; }
+  line-height: 3rem; }
 
 .contenedor {
   /*Este es otro bloque*/
@@ -7120,8 +7114,9 @@ textarea.form-control-lg {
 .caja__Titulo {
   /*Este es otro elemento del bloque caja*/
   color: black;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.875rem;
+  /**/
+  line-height: 2.5rem;
   font-family: "Nunito", sans-serif;
   text-align: center;
   padding: 10px; }
@@ -7160,7 +7155,8 @@ textarea.form-control-lg {
 .logoRedes {
   /*Este es otro bloque*/
   height: auto;
-  width: 55px;
+  width: 3.4375rem;
+  /*55px*/
   margin: 10px;
   padding: 8px;
   border-radius: 50%; }
@@ -7169,12 +7165,13 @@ textarea.form-control-lg {
 .tituloPri {
   /*Se va a usar para todos los h1 en cada .html, excepto el del index*/
   color: #ffbe50;
-  font-size: 45px;
+  font-size: 2.8125rem;
+  /*45px*/
   font-weight: bold;
   text-align: center;
   text-shadow: 1.5px 1.5px 0.5px grey;
   font-family: "Nunito", sans-serif;
-  margin: 30px; }
+  margin-top: 4vh; }
 
 .contenedorNosotros {
   display: flex;
@@ -7192,7 +7189,7 @@ textarea.form-control-lg {
 
 .tituloNosotros {
   color: white;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   margin: 15px;
@@ -7201,39 +7198,39 @@ textarea.form-control-lg {
 
 .parrafoNosotros {
   color: white;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   font-family: "Nunito", sans-serif;
   text-align: center; }
 
 .titulo {
   color: black;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 3.125rem;
   font-family: "Nunito", sans-serif;
-  margin: 20px;
+  margin: 1.25rem;
   text-align: center; }
 
 .parrafo {
   color: black;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
   font-family: "Nunito", sans-serif;
   text-align: center; }
 
 .iconStyle {
-  height: 70px; }
+  height: 4.375rem; }
 
 .contenedorPilares {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
-  margin: 30px; }
+  margin: 1.875rem; }
 
 .cajita {
-  margin: 25px;
+  margin: 1.5625rem;
   height: auto;
   width: 30vw;
   text-align: center;
@@ -7249,25 +7246,25 @@ textarea.form-control-lg {
 
 .tituloServicio {
   color: black;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 3.125rem;
   font-family: "Nunito", sans-serif;
   text-align: start;
-  margin: 40px 40px 20px 50px; }
+  margin: 2.5rem 2.5rem 1.25rem 3.125rem; }
 
 .parrafoServicio {
   color: black;
-  font-size: 25px;
-  line-height: 40px;
+  font-size: 1.5625rem;
+  line-height: 2.5rem;
   font-family: "Nunito", sans-serif;
-  margin: 20px;
+  margin: 1.25rem;
   text-align: center; }
 
 .serviciosFlex {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   justify-content: center;
   align-items: center; }
 
@@ -7280,8 +7277,8 @@ textarea.form-control-lg {
 
 .parrafoBlog {
   color: black;
-  font-size: 25px;
-  line-height: 40px;
+  font-size: 1.5625rem;
+  line-height: 2.5rem;
   font-family: "Nunito", sans-serif;
   text-align: center;
   margin: 0 15px; }
@@ -7293,20 +7290,20 @@ textarea.form-control-lg {
 
 .contacto {
   color: black;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Nunito", sans-serif;
-  margin: 25px; }
+  margin: 1.5625rem; }
 
 .contactoFlex {
   display: flex;
   flex-direction: row;
-  margin: 20px 20px 0 20px; }
+  margin: 1.25rem 1.25rem 0 1.25rem; }
 
 .mapaContacto {
   border-radius: 10px; }
 
 .cajitaFormulario {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   border-radius: 10px;
   box-shadow: 5px 5px 15px 5px #484848;
   max-width: 45vw; }
@@ -7327,16 +7324,16 @@ textarea.form-control-lg {
     /*Propiedades CSS*/ }
   20% {
     font-family: "Nunito", sans-serif;
-    color: #ffbe50; }
+    color: white; }
   40% {
     font-family: "Nunito", sans-serif;
-    color: #ffbe50; }
+    color: white; }
   60% {
     font-family: "Nunito", sans-serif;
-    color: #ffbe50; }
+    color: white; }
   80% {
     font-family: "Nunito", sans-serif;
-    color: #ffbe50; }
+    color: white; }
   100% {
     color: black;
     font-family: "Nunito", sans-serif;
@@ -7396,33 +7393,33 @@ textarea.form-control-lg {
   .logoFooter {
     width: 18vw; }
   .tituloPrincipal {
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-top: 5vh; }
   .tituloSecundario {
-    font-size: 25px; }
+    font-size: 1.5625rem; }
   .tituloPri {
-    font-size: 30px; }
+    font-size: 1.875rem; }
   .caja__Titulo {
-    font-size: 25px; }
+    font-size: 1.5625rem; }
   .subtitulo {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .tituloNosotros {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center; }
   .parrafoNosotros {
-    font-size: 15px; }
+    font-size: 1rem; }
   .titulo {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .serviciosFlex {
     flex-direction: column; }
   .tituloServicio {
-    font-size: 25px; }
+    font-size: 1.5625rem; }
   .parrafoServicio {
-    font-size: 15px; }
+    font-size: 1rem; }
   .imgServicio {
     width: 65vw; }
   .parrafoBlog {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .contactoFlex {
     display: flex;
     flex-direction: column;
@@ -7441,26 +7438,26 @@ textarea.form-control-lg {
   .logoFooter {
     width: 35vw; }
   .tituloPrincipal {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 1vh; }
   .cajaDark {
     height: 40vh;
     justify-content: center;
-    padding-bottom: 20px; }
+    padding-bottom: 1.25rem; }
   .tituloSecundario {
-    font-size: 18px;
-    padding: 5vh; }
+    font-size: 1.125rem;
+    padding: 2vh; }
   .tituloPri {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .caja__Titulo {
-    font-size: 20px;
-    line-height: 20px; }
+    font-size: 1.25rem;
+    line-height: 1.25rem; }
   .caja__ImgServ {
     height: auto;
     width: 80vw; }
   .subtitulo {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin: 5px; }
   .cajaPie {
     display: flex;
@@ -7475,32 +7472,33 @@ textarea.form-control-lg {
   .articulo {
     width: 90vw; }
   .tituloNosotros {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .parrafoNosotros {
-    font-size: 15px; }
+    font-size: 1rem; }
   .titulo {
-    font-size: 18px;
-    line-height: 20px; }
+    font-size: 1.125rem;
+    line-height: 1.25rem; }
   .parrafo {
-    font-size: 15px;
-    line-height: 20px; }
+    font-size: 1rem;
+    line-height: 1.25rem; }
   .tituloServicio {
-    font-size: 15px; }
+    font-size: 1rem; }
   .parrafoServicio {
-    font-size: 15px;
-    line-height: 20px; }
+    font-size: 1rem;
+    line-height: 1.25rem; }
   .parrafoBlog {
-    font-size: 15px;
-    line-height: 20px; }
+    font-size: 1rem;
+    line-height: 1.25rem; }
   .contacto {
-    font-size: 13px;
-    margin: 10px 0px; }
+    font-size: 14px;
+    text-align: left;
+    margin-left: 1px; }
   .cajitaFormulario {
     max-width: 92vw; } }
 
 /*Mixin para crear bordes en cajas*/
 .cajaFormulario {
-  border: 5px solid #610885;
+  border: 5px solid #ffbe50;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #484848;
+  box-shadow: 5px 5px 5px #b8b5b5;
   max-width: 100vw; }
