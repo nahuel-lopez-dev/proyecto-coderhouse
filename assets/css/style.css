@@ -7050,8 +7050,9 @@ textarea.form-control-lg {
   text-shadow: 1.5px 1.5px 0.5px grey;
   font-family: "Nunito", sans-serif;
   position: absolute;
-  margin: 4vh 2vw 1vh 2vw;
-  padding: 0 1vw; }
+  margin-top: 4vh;
+  margin-right: 2vw;
+  margin-left: 2vw; }
 
 .tituloSecundario {
   /*Este es otro elemento del bloque caja*/
@@ -7060,7 +7061,7 @@ textarea.form-control-lg {
   /* 48px*/
   font-weight: bold;
   font-family: "Nunito", sans-serif;
-  padding: 5vh;
+  margin: 4vh 0;
   justify-content: center; }
 
 .cajaDark {
@@ -7075,7 +7076,7 @@ textarea.form-control-lg {
   /*Este es otro bloque.*/
   color: white;
   font-size: 2rem;
-  /* 30px*/
+  /* 32px*/
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   line-height: 3rem; }
@@ -7169,7 +7170,7 @@ textarea.form-control-lg {
   text-align: center;
   text-shadow: 1.5px 1.5px 0.5px grey;
   font-family: "Nunito", sans-serif;
-  margin-top: 4vh; }
+  margin: 4vh 2vw 3vh 2vw; }
 
 .contenedorNosotros {
   display: flex;
@@ -7185,16 +7186,27 @@ textarea.form-control-lg {
   align-items: center;
   align-self: center; }
 
+.tituloValores {
+  /*Este es otro elemento del bloque caja*/
+  color: #b8b5b5;
+  font-size: 3rem;
+  /* 48px*/
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  padding: 5vh;
+  text-align: center;
+  justify-content: center; }
+
 .valores {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   margin: 1rem;
   text-align: center;
   padding-top: 3vh; }
 
-.parrafoNosotros {
+.parrafoValores {
   color: white;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -7203,11 +7215,11 @@ textarea.form-control-lg {
 
 .titulo {
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 3.125rem;
   font-family: "Nunito", sans-serif;
-  margin: 1.25rem;
+  margin: 1.5rem 0;
   text-align: center; }
 
 .parrafo {
@@ -7273,14 +7285,6 @@ textarea.form-control-lg {
   margin: 10px;
   border-radius: 10px;
   align-self: center; }
-
-.parrafoBlog {
-  color: black;
-  font-size: 1.5625rem;
-  line-height: 2.5rem;
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-  margin: 0 15px; }
 
 .articulo {
   height: auto;
@@ -7402,10 +7406,12 @@ textarea.form-control-lg {
     font-size: 1.5625rem; }
   .subtitulo {
     font-size: 1.25rem; }
-  .tituloNosotros {
+  .tituloValores {
+    font-size: 1.5625rem; }
+  .valores {
     font-size: 1.25rem;
     text-align: center; }
-  .parrafoNosotros {
+  .parrafoValores {
     font-size: 1rem; }
   .titulo {
     font-size: 1.25rem; }
@@ -7470,13 +7476,17 @@ textarea.form-control-lg {
     width: 100vw; }
   .articulo {
     width: 90vw; }
-  .tituloNosotros {
+  .tituloValores {
+    font-size: 1.125rem;
+    padding: 2vh; }
+  .valores {
     font-size: 1.25rem; }
-  .parrafoNosotros {
+  .parrafoValores {
     font-size: 1rem; }
   .titulo {
     font-size: 1.125rem;
-    line-height: 1.25rem; }
+    line-height: 1.25rem;
+    margin: 1rem; }
   .parrafo {
     font-size: 1rem;
     line-height: 1.25rem; }
