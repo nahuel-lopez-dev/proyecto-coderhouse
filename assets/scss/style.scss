@@ -10,7 +10,6 @@ $colortres: rgb(184, 181, 181);
 $colorCuatro: rgb(97, 8, 133);
 $colorCinco: #ffbe50;
 $letraFuente: "Nunito", sans-serif;
-$letraFuenteDos: "Gagalin";
 /*Variables cambiadas en bootstrap*/
 $primary: rgb(184, 181, 181);
 $danger: #c0130a;
@@ -40,11 +39,6 @@ $theme-colors: (
     margin-left: 0.2vw;
 }
 
-.logoFooter {
-    width: 13vw;
-    height: auto;
-}
-
 /*Secciones del home con BEM*/
 .cajaHome {         /*Este es un bloque*/
     display: flex;
@@ -57,7 +51,7 @@ $theme-colors: (
     width: 100vw;
 }
 
-.cajaHome::before {
+.cajaHome::before { /*Este es un pseudoelemento de cajaHome para producir el efecto "overlay"*/
     position: absolute;
     content: '';
     top: 0;
@@ -80,7 +74,7 @@ $theme-colors: (
     margin-left: 2vw;
 }
 
-.tituloSecundario {     /*Este es otro elemento del bloque caja*/
+.tituloSecundario {     /*Este es otro bloque*/
     color: $colorCinco;
     font-size: 3rem; /* 48px*/
     font-weight: bold;
@@ -89,7 +83,7 @@ $theme-colors: (
     justify-content: center;
 }
 
-.cajaDark {
+.cajaDark {     /*Este es otro bloque*/
     max-width: 100vw;
     height: 50vh;
     text-align: center;
@@ -185,6 +179,10 @@ $theme-colors: (
     border-radius: 50%;
 }
 
+.logoFooter {   /*Este es otro bloque*/
+    width: 13vw;
+    height: auto;
+}
 /*Acá termino de usar BEM*/
 
 .tituloPri {        /*Se va a usar para todos los h1 en cada .html, excepto el del index*/
@@ -209,8 +207,6 @@ $theme-colors: (
     height: auto;
     width: 70vw;
     border-radius: 5%;
-    align-items: center;
-    align-self: center;
 }
 
 .tituloValores {     /*Este es otro elemento del bloque caja*/
@@ -218,9 +214,7 @@ $theme-colors: (
     font-size: 3rem; /* 48px*/
     font-weight: bold;
     font-family: $letraFuente;
-    padding: 5vh;
     text-align: center;
-    justify-content: center;
 }
 
 .valores {
@@ -230,13 +224,12 @@ $theme-colors: (
     font-family: $letraFuente;
     margin: 1rem;
     text-align: center;
-    padding-top: 3vh;
 }
 
 .parrafoValores {
     color: $colorDos;
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    line-height: 1.8rem;
     font-family: $letraFuente;
     text-align: center;   
 }
@@ -245,7 +238,7 @@ $theme-colors: (
     color: $colorUno;
     font-size: 3rem;
     font-weight: bold;
-    line-height: 3.125rem;
+    line-height: 3rem;
     font-family: $letraFuente;
     margin: 1.5rem 0;
     text-align: center;
@@ -253,7 +246,7 @@ $theme-colors: (
 
 .parrafo {
     color: $colorUno;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2.5rem;
     font-family: $letraFuente;
     text-align: center;    
@@ -300,7 +293,7 @@ $theme-colors: (
 
 .parrafoServicio {
     color: $colorUno;
-    font-size: 1.5625rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
     font-family: $letraFuente;
     margin: 1.25rem;
@@ -310,7 +303,7 @@ $theme-colors: (
 .serviciosFlex {
     display: flex;
     flex-direction:row;
-    margin-bottom: 1.875rem;
+    margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
 }
@@ -327,14 +320,13 @@ $theme-colors: (
     height: auto;
     width: 30vw;
     border-radius: 10px;
-
 }
 
 .contacto {
     color: $colorUno;
     font-size: 1.25rem;
     font-family: $letraFuente;
-    margin: 1.5625rem;
+    margin: 1.5rem;
 }
 
 .contactoFlex {
@@ -348,7 +340,7 @@ $theme-colors: (
 }
 
 .cajitaFormulario {
-    margin-bottom: 1.875rem;
+    margin-bottom: 2rem;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px #484848;
     max-width: 45vw;
@@ -455,20 +447,20 @@ $theme-colors: (
     }
 
     .tituloPrincipal {
-        font-size: 1.875rem;
+        font-size: 2rem;
         margin-top: 5vh;
     }
 
     .tituloSecundario {
-        font-size: 1.5625rem;
+        font-size: 1.5rem;
     }
 
     .tituloPri {
-        font-size: 1.875rem;        
+        font-size: 2rem;        
     }
     
     .caja__Titulo {
-        font-size: 1.5625rem;
+        font-size: 1.5rem;
     }
     
     .subtitulo {
@@ -476,7 +468,7 @@ $theme-colors: (
     }
 
     .tituloValores {
-        font-size: 1.5625rem;
+        font-size: 1.5rem;
     }
 
     .valores {
@@ -498,11 +490,11 @@ $theme-colors: (
     }
 
     .tituloServicio {
-        font-size: 1.5625rem;
+        font-size: 1.5rem;
     }
 
     .parrafoServicio {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .imgServicio {
@@ -522,7 +514,6 @@ $theme-colors: (
     .cajitaFormulario {
         max-width: 80vw;
     }
-
 }
 
 @media(max-width: 575.98px) {
@@ -554,7 +545,7 @@ $theme-colors: (
     }
 
     .tituloSecundario {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
         padding: 2vh;
     }
 
@@ -601,8 +592,8 @@ $theme-colors: (
     }
 
     .tituloValores {
-        font-size: 1.125rem;
-        padding: 2vh;
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
     }
 
     .valores {
