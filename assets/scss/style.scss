@@ -207,6 +207,8 @@ $theme-colors: (
     height: auto;
     width: 70vw;
     border-radius: 5%;
+    align-items: center;
+    align-self: center;
 }
 
 .tituloValores {     /*Este es otro elemento del bloque caja*/
@@ -247,7 +249,7 @@ $theme-colors: (
 .parrafo {
     color: $colorUno;
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     font-family: $letraFuente;
     text-align: center;    
 }
@@ -464,6 +466,10 @@ $theme-colors: (
     }
     
     .subtitulo {
+        font-size: 1.25rem;
+    }
+
+    .parrafo {
         font-size: 1.25rem;
     }
 

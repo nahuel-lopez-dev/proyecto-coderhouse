@@ -7185,7 +7185,9 @@ textarea.form-control-lg {
 .videoNosotros {
   height: auto;
   width: 70vw;
-  border-radius: 5%; }
+  border-radius: 5%;
+  align-items: center;
+  align-self: center; }
 
 .tituloValores {
   /*Este es otro elemento del bloque caja*/
@@ -7223,7 +7225,7 @@ textarea.form-control-lg {
 .parrafo {
   color: black;
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
   font-family: "Nunito", sans-serif;
   text-align: center; }
 
@@ -7403,6 +7405,8 @@ textarea.form-control-lg {
   .caja__Titulo {
     font-size: 1.5rem; }
   .subtitulo {
+    font-size: 1.25rem; }
+  .parrafo {
     font-size: 1.25rem; }
   .tituloValores {
     font-size: 1.5rem; }
