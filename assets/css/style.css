@@ -7068,7 +7068,7 @@ textarea.form-control-lg {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; }
+  justify-content: space-between; }
 
 .subtitulo {
   /*Este es otro bloque.*/
