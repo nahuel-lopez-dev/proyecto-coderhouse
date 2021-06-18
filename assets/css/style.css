@@ -7316,8 +7316,7 @@ textarea.form-control-lg {
   transition: all 1s; }
 
 .trans:hover {
-  height: auto;
-  width: 35vw; }
+  transform: scale(1.1); }
 
 /*Animación*/
 /*Línea de tiempo*/

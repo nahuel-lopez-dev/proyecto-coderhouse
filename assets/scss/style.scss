@@ -354,8 +354,7 @@ $theme-colors: (
 }
 
 .trans:hover {
-    height:auto;
-    width: 35vw;
+    transform: scale(1.1);
 }
 
 /*Animación*/
