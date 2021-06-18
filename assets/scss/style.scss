@@ -448,46 +448,46 @@ $theme-colors: (
     }
 
     .tituloPrincipal {
-        font-size: 3rem;
+        font-size: 3.25rem;
         margin-top: 3vh;
     }
 
     .tituloSecundario {
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
 
     .tituloPri {
-        font-size: 3rem;
+        font-size: 3.25rem;
         margin-top: 3vh;        
     }
     
     .caja__Titulo {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     
     .subtitulo {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 
     .parrafo {
-        font-size: 1.25rem;
-    }
-
-    .tituloValores {
         font-size: 1.5rem;
     }
 
+    .tituloValores {
+        font-size: 2rem;
+    }
+
     .valores {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
     .parrafoValores {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .titulo {
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
 
 
@@ -495,12 +495,8 @@ $theme-colors: (
         flex-direction:column;
     }
 
-    .tituloServicio {
-        font-size: 1.5rem;
-    }
-
     .parrafoServicio {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .imgServicio {
@@ -508,7 +504,7 @@ $theme-colors: (
     }
 
     .parrafoBlog {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .contactoFlex {
