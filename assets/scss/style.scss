@@ -89,7 +89,7 @@ $theme-colors: (
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 
 .subtitulo {        /*Este es otro bloque.*/
@@ -453,7 +453,7 @@ $theme-colors: (
     }
 
     .tituloSecundario {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
     .tituloPri {
@@ -466,7 +466,7 @@ $theme-colors: (
     }
     
     .subtitulo {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .parrafo {

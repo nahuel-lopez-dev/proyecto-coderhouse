@@ -7068,7 +7068,7 @@ textarea.form-control-lg {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
 
 .subtitulo {
   /*Este es otro bloque.*/
@@ -7398,14 +7398,14 @@ textarea.form-control-lg {
     font-size: 3.25rem;
     margin-top: 3vh; }
   .tituloSecundario {
-    font-size: 2.25rem; }
+    font-size: 2.5rem; }
   .tituloPri {
     font-size: 3.25rem;
     margin-top: 3vh; }
   .caja__Titulo {
     font-size: 1.75rem; }
   .subtitulo {
-    font-size: 1.75rem; }
+    font-size: 2rem; }
   .parrafo {
     font-size: 1.5rem; }
   .tituloValores {
