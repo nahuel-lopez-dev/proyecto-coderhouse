@@ -7310,7 +7310,7 @@ textarea.form-control-lg {
   border-radius: 10px;
   box-shadow: 5px 5px 15px 5px #484848; }
 
-.cajitaFormulario {
+.cajaFormulario {
   margin-bottom: 2rem;
   border-radius: 10px;
   box-shadow: 5px 5px 15px 5px #484848;
@@ -7434,7 +7434,7 @@ textarea.form-control-lg {
     display: flex;
     flex-direction: column;
     margin: 15px 10px; }
-  .cajitaFormulario {
+  .cajaFormulario {
     max-width: 80vw; } }
 
 @media (max-width: 575.98px) {
@@ -7504,12 +7504,5 @@ textarea.form-control-lg {
     font-size: 14px;
     text-align: left;
     margin-left: 1px; }
-  .cajitaFormulario {
+  .cajaFormulario {
     max-width: 92vw; } }
-
-/*Mixin para crear bordes en cajas*/
-.cajaFormulario {
-  border: 5px solid black;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px #b8b5b5;
-  max-width: 100vw; }

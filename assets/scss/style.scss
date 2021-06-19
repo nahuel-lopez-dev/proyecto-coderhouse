@@ -346,7 +346,7 @@ $theme-colors: (
     box-shadow: 5px 5px 15px 5px #484848;
 }
 
-.cajitaFormulario {
+.cajaFormulario {
     margin-bottom: 2rem;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px #484848;
@@ -518,7 +518,7 @@ $theme-colors: (
         margin: 15px 10px;
     }
 
-    .cajitaFormulario {
+    .cajaFormulario {
         max-width: 80vw;
     }
 }
@@ -639,19 +639,7 @@ $theme-colors: (
         margin-left: 1px;
     }
 
-    .cajitaFormulario {
+    .cajaFormulario {
         max-width: 92vw;
     }
-}
-
-/*Mixin para crear bordes en cajas*/
-@mixin crearBordes($color, $size, $shadow){
-    border:$size solid $color;
-    border-radius: $size;
-    box-shadow: 5px 5px $size $shadow;
-}
-
-.cajaFormulario {
-    @include crearBordes($colorUno, 5px, $colortres);
-    max-width: 100vw;
 }
