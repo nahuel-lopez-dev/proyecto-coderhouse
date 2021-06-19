@@ -328,7 +328,11 @@ $theme-colors: (
     color: $colorUno;
     font-size: 1.25rem;
     font-family: $letraFuente;
-    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 1rem;
 }
 
 .contactoFlex {
@@ -339,6 +343,7 @@ $theme-colors: (
 
 .mapaContacto {
     border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #484848;
 }
 
 .cajitaFormulario {
@@ -647,6 +652,6 @@ $theme-colors: (
 }
 
 .cajaFormulario {
-    @include crearBordes($colorCinco, 5px, $colortres);
+    @include crearBordes($colorUno, 5px, $colortres);
     max-width: 100vw;
 }
