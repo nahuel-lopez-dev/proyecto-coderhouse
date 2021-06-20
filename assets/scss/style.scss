@@ -370,7 +370,7 @@ $theme-colors: (
     }
     20% {
         font-family: $letraFuente;
-        color: $colorDos;
+        color: $colortres;
     }
     40% {
         font-family: $letraFuente;
@@ -378,7 +378,7 @@ $theme-colors: (
     }
     60% {
         font-family: $letraFuente;
-        color: $colorDos;
+        color: $colortres;
     }
     80% {
         font-family: $letraFuente;
@@ -394,7 +394,7 @@ $theme-colors: (
     animation-name: efectoUno; /*Nombre del keyframe*/
     animation-iteration-count: 2;
     animation-timing-function: ease-in;
-    animation-duration: 0.35s;
+    animation-duration: 0.5s;
     animation-delay: 0.7s;
 }
 
@@ -404,21 +404,22 @@ $theme-colors: (
     }
     20% {
         transform: rotate(45deg);
+        color: $colorTres;
         font-family: $letraFuente;
     }
     40% {
         transform: rotate(90deg);
-        color: $colortres;
+        color: $colorDos;
         font-family: $letraFuente;
     }
     60% {
         transform: rotate(180deg);
-        color: $colortres;
+        color: $colorTres;
         font-family: $letraFuente;
     }
     80% {
         transform: rotate(270deg);
-        color: $colortres;
+        color: $colorDos;
         font-family: $letraFuente;
     }
     100% {
@@ -432,7 +433,7 @@ $theme-colors: (
     animation-name: efectoDos; /*Nombre del keyframe*/
     animation-iteration-count: 2;
     animation-timing-function: ease-in;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-delay: 1s;
 }
 
