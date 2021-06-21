@@ -6,7 +6,7 @@
 /*Variables globales*/
 $colorUno: black;
 $colorDos: white;
-$colortres: rgb(184, 181, 181);
+$colorTres: rgb(184, 181, 181);
 $colorCuatro: rgb(97, 8, 133);
 $colorCinco: #ffbe50;
 $letraFuente: "Nunito", sans-serif;
@@ -161,7 +161,7 @@ $theme-colors: (
 }
 
 .contenedorPie__items--itemsColor {     /*Este es un modificador del elemento del bloque contenedorPie*/
-    color: $colortres;
+    color: $colorTres;
     text-decoration: none;
 }
 
@@ -212,7 +212,7 @@ $theme-colors: (
 }
 
 .tituloValores {     /*Este es otro elemento del bloque caja*/
-    color: $colortres;
+    color: $colorTres;
     font-size: 3rem; /* 48px*/
     font-weight: bold;
     font-family: $letraFuente;
@@ -370,7 +370,7 @@ $theme-colors: (
     }
     20% {
         font-family: $letraFuente;
-        color: $colortres;
+        color: $colorTres;
     }
     40% {
         font-family: $letraFuente;
@@ -378,7 +378,7 @@ $theme-colors: (
     }
     60% {
         font-family: $letraFuente;
-        color: $colortres;
+        color: $colorTres;
     }
     80% {
         font-family: $letraFuente;
