@@ -7125,7 +7125,8 @@ textarea.form-control-lg {
   /*Este es otro bloque*/
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-top: 2px solid #ffbe50; }
 
 .contenedorPie {
   /*Este es otro bloque*/
@@ -7167,7 +7168,7 @@ textarea.form-control-lg {
 /*Acá termino de usar BEM*/
 .tituloPri {
   /*Se va a usar para todos los h1 en cada .html, excepto el del index*/
-  color: #ffbe50;
+  color: black;
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
@@ -7190,8 +7191,7 @@ textarea.form-control-lg {
   align-self: center; }
 
 .tituloValores {
-  /*Este es otro elemento del bloque caja*/
-  color: #b8b5b5;
+  color: #ffbe50;
   font-size: 3rem;
   /* 48px*/
   font-weight: bold;
@@ -7199,7 +7199,7 @@ textarea.form-control-lg {
   text-align: center; }
 
 .valores {
-  color: white;
+  color: #ffbe50;
   font-size: 2.25rem;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
@@ -7255,14 +7255,13 @@ textarea.form-control-lg {
   box-shadow: 5px 5px 15px 5px #484848; }
 
 .tituloServicio {
-  /*...Revisar esta clase a ver si la uso en alguna parte. Podría ser tituloValores......*/
-  color: black;
-  font-size: 2rem;
+  color: #ffbe50;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 3rem;
   font-family: "Nunito", sans-serif;
-  text-align: start;
-  margin: 2.5rem 2.5rem 1.25rem 3.125rem; }
+  margin: 1.5rem 0;
+  text-align: center; }
 
 .parrafoServicio {
   color: black;
@@ -7387,15 +7386,15 @@ textarea.form-control-lg {
   /*Nombre del keyframe*/
   animation-iteration-count: 2;
   animation-timing-function: ease-in;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-delay: 1s; }
 
+/*Adaptación a tablet*/
 @media (max-width: 991.98px) {
   .logoNav {
     width: 15vw;
     margin-left: 3vw; }
   .sloganNav {
-    /*Este es otro bloque*/
     width: 32vw;
     height: auto; }
   .logoFooter {
@@ -7423,6 +7422,8 @@ textarea.form-control-lg {
     font-size: 1.25rem; }
   .titulo {
     font-size: 2rem; }
+  .tituloServicio {
+    font-size: 2rem; }
   .serviciosFlex {
     flex-direction: column; }
   .parrafoServicio {
@@ -7438,6 +7439,7 @@ textarea.form-control-lg {
   .cajaFormulario {
     max-width: 80vw; } }
 
+/*Adaptación a mobile*/
 @media (max-width: 575.98px) {
   .logoNav {
     width: 20vw;
@@ -7493,6 +7495,8 @@ textarea.form-control-lg {
     font-size: 1.25rem;
     line-height: 1.25rem;
     margin: 1rem; }
+  .tituloServicio {
+    font-size: 1.25rem; }
   .parrafo {
     font-size: 1.25rem; }
   .parrafoServicio {

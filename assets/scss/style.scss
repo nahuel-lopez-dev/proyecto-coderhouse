@@ -7,8 +7,7 @@
 $colorUno: black;
 $colorDos: white;
 $colorTres: rgb(184, 181, 181);
-$colorCuatro: rgb(97, 8, 133);
-$colorCinco: #ffbe50;
+$colorCuatro: #ffbe50;
 $letraFuente: "Nunito", sans-serif;
 /*Variables cambiadas en bootstrap*/
 $primary: rgb(184, 181, 181);
@@ -62,7 +61,7 @@ $theme-colors: (
 }
 
 .tituloPrincipal {        /*Este es un bloque*/
-    color: $colorCinco;
+    color: $colorCuatro;
     font-size: 4rem;   /* 64px*/
     font-weight: bold;
     text-align: center;
@@ -75,7 +74,7 @@ $theme-colors: (
 }
 
 .tituloSecundario {     /*Este es otro bloque*/
-    color: $colorCinco;
+    color: $colorCuatro;
     font-size: 3rem; /* 48px*/
     font-weight: bold;
     font-family: $letraFuente;
@@ -145,6 +144,7 @@ $theme-colors: (
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-top: 2px solid #ffbe50;
 }
 
 .contenedorPie {        /*Este es otro bloque*/
@@ -186,7 +186,7 @@ $theme-colors: (
 /*Acá termino de usar BEM*/
 
 .tituloPri {        /*Se va a usar para todos los h1 en cada .html, excepto el del index*/
-    color: $colorCinco;
+    color: $colorUno;
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
@@ -211,8 +211,8 @@ $theme-colors: (
     align-self: center;
 }
 
-.tituloValores {     /*Este es otro elemento del bloque caja*/
-    color: $colorTres;
+.tituloValores {     
+    color: $colorCuatro;
     font-size: 3rem; /* 48px*/
     font-weight: bold;
     font-family: $letraFuente;
@@ -220,7 +220,7 @@ $theme-colors: (
 }
 
 .valores {
-    color: $colorDos;
+    color: $colorCuatro;
     font-size: 2.25rem;
     font-weight: bold;
     font-family: $letraFuente;
@@ -283,14 +283,15 @@ $theme-colors: (
     box-shadow: 5px 5px 15px 5px #484848;
 }
 
-.tituloServicio { /*...Revisar esta clase a ver si la uso en alguna parte. Podría ser tituloValores......*/
-    color: $colorUno;
-    font-size: 2rem;
+.tituloServicio { 
+    color: $colorCuatro;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 3rem;
     font-family: $letraFuente;
-    text-align: start;
-    margin: 2.5rem 2.5rem 1.25rem 3.125rem;
+    margin: 1.5rem 0;
+    text-align: center;
+
 }
 
 .parrafoServicio {
@@ -433,10 +434,11 @@ $theme-colors: (
     animation-name: efectoDos; /*Nombre del keyframe*/
     animation-iteration-count: 2;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-delay: 1s;
 }
 
+/*Adaptación a tablet*/
 @media(max-width: 991.98px) {
     
     .logoNav {
@@ -444,7 +446,7 @@ $theme-colors: (
         margin-left: 3vw;
     }
     
-    .sloganNav {      /*Este es otro bloque*/
+    .sloganNav {      
         width: 32vw;
         height: auto;
     }
@@ -495,7 +497,10 @@ $theme-colors: (
     .titulo {
         font-size: 2rem;
     }
-
+    
+    .tituloServicio {
+        font-size: 2rem;
+    }
 
     .serviciosFlex {
         flex-direction:column;
@@ -524,6 +529,7 @@ $theme-colors: (
     }
 }
 
+/*Adaptación a mobile*/
 @media(max-width: 575.98px) {
 
     .logoNav {
@@ -618,6 +624,10 @@ $theme-colors: (
         font-size: 1.25rem;
         line-height: 1.25rem;
         margin: 1rem;
+    }
+
+    .tituloServicio {
+        font-size: 1.25rem;
     }
 
     .parrafo {
