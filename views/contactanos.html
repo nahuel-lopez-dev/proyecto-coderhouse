@@ -60,121 +60,125 @@
   </header>
   <!-- Acá termina la cabecera -->
 
-  <section>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-danger m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Oferta laboral
-    </button>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">¡¡En búsqueda de un desarrollador web full stack!!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Dejanos tu cv al email: so.tus.solucionesonline@gmail.com
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+  <!--Acá empieza el contenido principal-->
+  <main>
+    <section>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-danger m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Oferta laboral
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">¡¡En búsqueda de un desarrollador web full stack!!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Dejanos tu cv al email: so.tus.solucionesonline@gmail.com
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <h1 class="tituloPri mb-4 animaUno">Estamos para ayudarte... a un clic de distancia</h1>
-
-    <div class="contactoFlex">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5573.008415265268!2d-58.671859045895516!3d-34.65514777022682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe81aba2ac9%3A0x94163c54dbd664af!2sManuel%20Rodr%C3%ADguez%20Fragio%20459%2C%20B1714%20Ituzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1623192399120!5m2!1ses-419!2sar"
-        width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-        class="mapaContacto mb-3"></iframe>
-      <ul class="contacto">
-        <li>Dirección: Manuel Rodriguez Fragio 459 (Bs. As., Argentina)</li> <br>
-        <li>Contacto: (+54)1168076800</li> <br>
-        <li>Email: so.tus.solucionesonline@gmail.com</li> <br>
-      </ul>
-    </div>
-
-    <section>
-      <h2 class="titulo animaDos">Comunicate con nosotros</h2>
-      <div>
-        <form class="container cajaFormulario bg-dark">
-          <div class="form-group col-md-12">
-            <label for="first_name"></label>
-            <input id="first_name" name="first_name" type="text" class="form-control" placeholder=" Nombre o empresa"
-              required>
-          </div>
-
-          <div class="form-group col-md-12 mb-3">
-            <label for="email"></label>
-            <input id="email" type="email" class="form-control" placeholder="Email" required>
-          </div>
-
-          <span class="m-2 text-white">Servicios sobre los que desea información</span>
-          <div class="form-group m-2 text-white">
-            <label for="page">Páginas web</label>
-            <input id="page" type="checkbox" name="webPage">
-          </div>
-
-          <div class="form-group m-2 text-white">
-            <label for="Desarrollo">Soporte IT</label>
-            <input id="Desarrollo" type="checkbox" name="desarrolloSoftware">
-          </div>
-
-          <div class="form-group m-2 text-white">
-            <label for="Desarrollo">Desarrollo de software</label>
-            <input id="Desarrollo" type="checkbox" name="desarrolloSoftware">
-          </div>
-
-          <div class="form-group m-2 text-white">
-            <label for="marketing">Marketing digital</label>
-            <input id="marketing" type="checkbox" name="marketingDigital">
-          </div>
-
-          <span class="m-2 text-white">¿Cómo nos conoció?</span>
-          <div class="form-group text-white">
-            <label for="conoce"></label>
-            <select id="conoce">
-              <option value="ar">Internet</option>
-              <option value="co">Redes sociales</option>
-              <option value="me">Me contó mi amigo "Coder"</option>
-              <option value="me">Otro</option>
-            </select>
-          </div>
-
-          <div class="col-md-12 text-white">
-            <label for="exampleFormControlTextarea1" class="form-label m-2">Escriba aquí su mensaje:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-
-          <span class="m-2 text-white">¿Desea suscribirse a nuestro newsletter?</span> <br>
-          <div class="form-group m-2 text-white">
-            <label for="quiere">Si</label>
-            <input id="quiere" type="radio" name="newsletter">
-            <label for="noquiere">No</label>
-            <input id="noquiere" type="radio" name="newsletter">
-          </div>
-
-          <div class="col-12 m-2 mt-3">
-            <div class="form-check text-white">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-              <label class="form-check-label" for="invalidCheck2">
-                Estoy de acuerdo con los términos y condiciones del servicio
-              </label>
-            </div>
-          </div>
-
-          <div class="form-group text-center">
-            <label></label>
-            <input type="submit" class="btn btn-lg btn-primary m-3" value="Enviar">
-            <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Borrar">
-          </div>
-        </form>
+  
+      <h1 class="tituloPri mb-4 animaUno">Estamos para ayudarte... a un clic de distancia</h1>
+  
+      <div class="contactoFlex">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5573.008415265268!2d-58.671859045895516!3d-34.65514777022682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe81aba2ac9%3A0x94163c54dbd664af!2sManuel%20Rodr%C3%ADguez%20Fragio%20459%2C%20B1714%20Ituzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1623192399120!5m2!1ses-419!2sar"
+          width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+          class="mapaContacto mb-3"></iframe>
+        <ul class="contacto">
+          <li>Dirección: Manuel Rodriguez Fragio 459 (Bs. As., Argentina)</li> <br>
+          <li>Contacto: (+54)1168076800</li> <br>
+          <li>Email: so.tus.solucionesonline@gmail.com</li> <br>
+        </ul>
       </div>
+  
+      <section>
+        <h2 class="titulo animaDos">Comunicate con nosotros</h2>
+        <div>
+          <form class="container cajaFormulario bg-dark">
+            <div class="form-group col-md-12">
+              <label for="first_name"></label>
+              <input id="first_name" name="first_name" type="text" class="form-control" placeholder=" Nombre o empresa"
+                required>
+            </div>
+  
+            <div class="form-group col-md-12 mb-3">
+              <label for="email"></label>
+              <input id="email" type="email" class="form-control" placeholder="Email" required>
+            </div>
+  
+            <span class="m-2 text-white">Servicios sobre los que desea información</span>
+            <div class="form-group m-2 text-white">
+              <label for="page">Páginas web</label>
+              <input id="page" type="checkbox" name="webPage">
+            </div>
+  
+            <div class="form-group m-2 text-white">
+              <label for="Desarrollo">Soporte IT</label>
+              <input id="Desarrollo" type="checkbox" name="desarrolloSoftware">
+            </div>
+  
+            <div class="form-group m-2 text-white">
+              <label for="Desarrollo">Desarrollo de software</label>
+              <input id="Desarrollo" type="checkbox" name="desarrolloSoftware">
+            </div>
+  
+            <div class="form-group m-2 text-white">
+              <label for="marketing">Marketing digital</label>
+              <input id="marketing" type="checkbox" name="marketingDigital">
+            </div>
+  
+            <span class="m-2 text-white">¿Cómo nos conoció?</span>
+            <div class="form-group text-white">
+              <label for="conoce"></label>
+              <select id="conoce">
+                <option value="ar">Internet</option>
+                <option value="co">Redes sociales</option>
+                <option value="me">Me contó mi amigo "Coder"</option>
+                <option value="me">Otro</option>
+              </select>
+            </div>
+  
+            <div class="col-md-12 text-white">
+              <label for="exampleFormControlTextarea1" class="form-label m-2">Escriba aquí su mensaje:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+  
+            <span class="m-2 text-white">¿Desea suscribirse a nuestro newsletter?</span> <br>
+            <div class="form-group m-2 text-white">
+              <label for="quiere">Si</label>
+              <input id="quiere" type="radio" name="newsletter">
+              <label for="noquiere">No</label>
+              <input id="noquiere" type="radio" name="newsletter">
+            </div>
+  
+            <div class="col-12 m-2 mt-3">
+              <div class="form-check text-white">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Estoy de acuerdo con los términos y condiciones del servicio
+                </label>
+              </div>
+            </div>
+  
+            <div class="form-group text-center">
+              <label></label>
+              <input type="submit" class="btn btn-lg btn-primary m-3" value="Enviar">
+              <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Borrar">
+            </div>
+          </form>
+        </div>
+      </section>
     </section>
-  </section>
+  </main>
+  <!--Acá termina el contenido principal-->
 
   <!--Acá empieza el pie de página-->
   <footer class="container-fluid background bg-dark cajaPie">
