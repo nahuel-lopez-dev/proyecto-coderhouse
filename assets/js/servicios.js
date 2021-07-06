@@ -54,7 +54,7 @@ class Servicio {   // Clase Servicio
                 alert("No ingresaste ni 1 ni 2 ni 3... Muchas gracias, vuelvas prontos... Apu.");
                 break;
         }
-        return console.log("Servicio vendido");
+        return console.log("Simulación de servicio vendido realizada");
     }
     cobrar() {
         return "Se le cobrará el siguiente monto " + precioFinal;
@@ -69,7 +69,7 @@ const soporteIt      = new Servicio("Soporte IT", trabajoSoporte, mantenimientoS
 const desarrolloSoft = new Servicio("Desarrollo de software", trabajoSoftware, mantenimientoSoft); //Creando el objeto desarrolloSoft
 const marketing      = new Servicio("Marketing digital", trabajoMarketing, mantenimientoMark);     //Creando el objeto marketing
 
-//Se va a saludar al usuario y posteriormente darle información sobre los servicios. Más adelante se modificará la forma de presentar este mensaje.
+//Se va a saludar al usuario y posteriormente darle información sobre los servicios, si así lo desea. Más adelante se modificará la forma de presentar este mensaje.
 let informacion = parseInt(prompt(`¡¡Bienvenid@!! ¿Te gustaría algo de informacion, como los precios aproximados de nuestros servicios?\n1:SI ; 2:NO`));
 switch(informacion) {
     case 1:
@@ -97,7 +97,7 @@ let ofrecimiento = parseInt(prompt("¿Desea contratar algún servicio? 1:SI ; 2:
 
 switch(ofrecimiento) {
     case 1:
-        let elegir = parseInt(prompt(`Ingrese el número del servicio que desea contratar siendo\n1:Páginas Web\n2:Soporte IT\n3:Desarrollo de software\n4:Marketing digital`));
+        let elegir = parseInt(prompt(`Ingrese el número del servicio que desea contratar siendo\n1:Páginas Web\n2:Soporte IT\n3:Desarrollo de software\n4:Marketing digital\n5: SALIR del menú`));
         switch(elegir) {
             case 1:
                 paginasWeb.vender();
@@ -111,14 +111,16 @@ switch(ofrecimiento) {
             case 4:
                 marketing.vender();
                 break;
+            case 5:
+                break;
             default:
-                alert("No ingresaste ningúno de los números de los servicios");
+                alert("No ingresaste ningúno de los números en pantalla. ¡Hasta luego!");
                 break;
         }
     case 2:
-        alert("¡No dude en consultarnos! Estamos para ayudarle.");
+        alert("¡No dude en consultarnos! Estamos para ayudarte.");
         break;
     default:
-        alert("No ingresaste ni 1 ni 2");
+        alert("No ingresaste 1 ni 2... ¡Hasta luego!");
         break;
 }
