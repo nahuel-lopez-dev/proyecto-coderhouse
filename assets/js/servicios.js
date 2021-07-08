@@ -124,3 +124,79 @@ switch(ofrecimiento) {
         alert("No ingresaste 1 ni 2... ¡Hasta luego!");
         break;
 }
+
+let serviciosPosibles = ["Páginas web", "Soporte It", "Desarrollo Software", "Marketing digital"];
+let serviciosCliente = [];
+let pasarServicios = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:SALIR`));
+
+// while(pasarServicios !=5) {
+//     pasarServicios = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:SALIR`));
+//     serviciosCliente.push(pasarServicios);
+// }
+
+/** Desafío 6 entregable y complementario */
+const pedidoServicio = (serv) => {
+    serviciosCliente = [serv];
+    while(serv !=5) {
+        serv = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:SALIR`));
+        serviciosCliente.push(serv);
+    }   
+}
+
+pedidoServicio(pasarServicios);
+console.log(serviciosCliente);
+let serviciosClienteOrdenados = serviciosCliente.sort();
+console.log("Servicios que desea el cliente", serviciosClienteOrdenados);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let serviciosCliente = [];
+// let serviciosInteresados = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:Ninguno más`));
+// serviciosCliente.push(serviciosInteresados);
+// alert(serviciosCliente);
+// while((serviciosCliente.lenght !=5) || (serviciosInteresados =5)) {
+//     serviciosInteresados = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:Ninguno más`));
+//     serviciosCliente.push(serviciosInteresados);
+// } 
+
+
+// while((serviciosCliente.length != 4) || (serviciosInteresados !=5)) {
+//     serviciosCliente.push(serviciosInteresados);
+//     serviciosInteresados;
+// }
+
+
+// let serviciosInteresados = 1;
+// let serviciosCliente = [serviciosInteresados];
+// let volverOfrecer = parseInt(prompt("¡Hola de nuevo! ¿Se encuentra interesado en algún servicio? 1:SI ; 2:NO"));
+// if (volverOfrecer = 1) {
+//     serviciosInteresados = parseInt(prompt(`Ingrese el número de los servicios en los que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital`));
+// }else if (volverOfrecer = 2) {
+//     alert("Siga mirando y cualquier duda nos consulta");
+// }else {
+//     alert("No ingreso 1 ni 2. Cualquier duda nos consulta. ¡Hasta luego!");
+// }
+// console.log(serviciosCliente);
+
+
+
+
