@@ -19,12 +19,44 @@ const iva = x => x * 0.21;              //Para agregarle el IVA a un determinado
 const recargoTarjeta = x => x * 1.15;   //Para recargo del 15%
 const descTrans = x => x * 0.9;         //Para descuento del 10%
 
-/** Clase con constructor y métodos */
+/**** Para el desafio 6 y 6 complementario ****/
+class Cliente {     //Clase cliente con constructor y método
+    constructor(nombre){
+        this.nombre = nombre;
+        this.servicios = [];
+    }
+    agregarServicio(servicio){
+        this.servicios.push(servicio);
+    }
+}
+
+const entradaNombre = prompt("¿Cómo es su nombre?");    //para pedir el nombre al usuario, potencial cliente
+const cliente1 = new Cliente (entradaNombre);           //Para crear el objeto cliente1 con el nombre ingresado por el usuario
+const saludoCliente = alert("Hola " + cliente1.nombre); //Saludando al usuario, con el nombre que ingresó
+
+let serviciosPosibles = ["Páginas web", "Soporte It", "Desarrollo Software", "Marketing digital"];  //arreglo con mis servicios, todos los que hay por ahora.
+let entradaServicios = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:SALIR`));
+
+while(cliente1.servicios.length < serviciosPosibles.length && entradaServicios < 5 && entradaServicios > 0) {
+    cliente1.agregarServicio(entradaServicios);
+    entradaServicios = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5 o más: SALIR`));
+}
+
+console.log(cliente1);                                    //imprime en consola el objeto cliente1
+console.log("servicios del cliente", cliente1.servicios); //imprime en consola el arreglo de los servicios en los que se encuentra interesado el cliente1
+
+serviciosClienteOrdenado = cliente1.servicios.sort();     //Creando un nuevo arreglo ordenado en forma creciente del arreglo cliente1.servicios, con el método "sort"   
+console.log("servicios del cliente ordenado", serviciosClienteOrdenado);    //imprimiendo en consola el arreglo ordenado
+
+/** Clase Servicio con constructor y métodos */
 class Servicio {   // Clase Servicio
     constructor(nombre, precio, mantenimiento) {   //Constructor con parámetros nombre, precio y mantenimiento de los servicios que se creen   
         this.nombre = nombre;   //
         this.precio = precio;   //
         this.mantenimiento = mantenimiento;   // 
+    }
+    info() {
+        return `${this.nombre} es uno de los servicios que ofrecemos\nTiene un precio aproximado de: ${this.precio} con un mantenimiento mensual de ${this.mantenimiento}\nLos precios no incluyen el IVA`;
     }
     vender() {
         let formaPago = parseInt(prompt("Ingrese la forma en que desea pagar su servicio siendo: 1 = transferencia bancaria o efectivo (dto: 10%) ; 2 = tarjeta de crédito (1 pago) ; 3 = tarjeta de crédito en cuotas (rgo:15%)"));
@@ -36,6 +68,7 @@ class Servicio {   // Clase Servicio
                 console.log("El precio final con el descuento incluido es de " + precioFinal + " pesos argentinos");
                 alert("El precio final con el descuento incluido es de " + precioFinal + " pesos argentinos");
                 break;
+
             case 2:
                 //Pago con tarjeta de crédito (En 1 pago)
                 console.log("%c Precio final del servicio:", "color:yellow");
@@ -57,10 +90,8 @@ class Servicio {   // Clase Servicio
         return console.log("Simulación de servicio vendido realizada");
     }
     cobrar() {
-        return "Se le cobrará el siguiente monto " + precioFinal;
-    }
-    info() {
-        return `${this.nombre} es uno de los servicios que ofrecemos\nTiene un precio aproximado de: ${this.precio} con un mantenimiento mensual de ${this.mantenimiento}\nLos precios no incluyen el IVA`;
+        alert("Se le cobrará el siguiente monto: " + precioFinal);
+        return console.log("Se le debería cobrar el siguiente monto: " + precioFinal); 
     }
 }
 
@@ -87,10 +118,10 @@ switch(informacion) {
         alert("No ingresaste 1 ni 2. Si querés comunicarte con nosotros, podés encontrarnos en la sección contactanos. ¡Estamos para ayudarte!");
 }
 
-console.log(paginasWeb);      //mostrando por consola la información del objeto paginasWeb
-console.log(soporteIt);       //mostrando por consola la información del objeto soporteIt
-console.log(desarrolloSoft);  //mostrando por consola la información del objeto desarrolloSoft
-console.log(marketing);       //mostrando por consola la información del objeto marketing
+console.log("Dpto. Desarrollo web", paginasWeb);      //mostrando por consola la información del objeto paginasWeb
+console.log("Dpto. Soporte IT", soporteIt);       //mostrando por consola la información del objeto soporteIt
+console.log("Dpto. Software", desarrolloSoft);  //mostrando por consola la información del objeto desarrolloSoft
+console.log("Dpto. Marketing digital", marketing);       //mostrando por consola la información del objeto marketing
 
 
 let ofrecimiento = parseInt(prompt("¿Desea contratar algún servicio? 1:SI ; 2:NO"));
@@ -101,15 +132,19 @@ switch(ofrecimiento) {
         switch(elegir) {
             case 1:
                 paginasWeb.vender();
+                paginasWeb.cobrar();
                 break;
             case 2:
                 soporteIt.vender();
+                soporteIt.cobrar();
                 break;
             case 3:
                 desarrolloSoft.vender();
+                desarrolloSoft.cobrar();
                 break;
             case 4:
                 marketing.vender();
+                marketing.cobrar();
                 break;
             case 5:
                 break;
@@ -124,79 +159,3 @@ switch(ofrecimiento) {
         alert("No ingresaste 1 ni 2... ¡Hasta luego!");
         break;
 }
-
-let serviciosPosibles = ["Páginas web", "Soporte It", "Desarrollo Software", "Marketing digital"];
-let serviciosCliente = [];
-let pasarServicios = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:SALIR`));
-
-// while(pasarServicios !=5) {
-//     pasarServicios = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:SALIR`));
-//     serviciosCliente.push(pasarServicios);
-// }
-
-/** Desafío 6 entregable y complementario */
-const pedidoServicio = (serv) => {
-    serviciosCliente = [serv];
-    while(serv !=5) {
-        serv = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:SALIR`));
-        serviciosCliente.push(serv);
-    }   
-}
-
-pedidoServicio(pasarServicios);
-console.log(serviciosCliente);
-let serviciosClienteOrdenados = serviciosCliente.sort();
-console.log("Servicios que desea el cliente", serviciosClienteOrdenados);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let serviciosCliente = [];
-// let serviciosInteresados = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:Ninguno más`));
-// serviciosCliente.push(serviciosInteresados);
-// alert(serviciosCliente);
-// while((serviciosCliente.lenght !=5) || (serviciosInteresados =5)) {
-//     serviciosInteresados = parseInt(prompt(`Ingrese el número del servicio en que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital\n5:Ninguno más`));
-//     serviciosCliente.push(serviciosInteresados);
-// } 
-
-
-// while((serviciosCliente.length != 4) || (serviciosInteresados !=5)) {
-//     serviciosCliente.push(serviciosInteresados);
-//     serviciosInteresados;
-// }
-
-
-// let serviciosInteresados = 1;
-// let serviciosCliente = [serviciosInteresados];
-// let volverOfrecer = parseInt(prompt("¡Hola de nuevo! ¿Se encuentra interesado en algún servicio? 1:SI ; 2:NO"));
-// if (volverOfrecer = 1) {
-//     serviciosInteresados = parseInt(prompt(`Ingrese el número de los servicios en los que se encuentra interesado\n1:Páginas web\n2:Soporte It\n3:Desarrollo de software\n4:Marketing digital`));
-// }else if (volverOfrecer = 2) {
-//     alert("Siga mirando y cualquier duda nos consulta");
-// }else {
-//     alert("No ingreso 1 ni 2. Cualquier duda nos consulta. ¡Hasta luego!");
-// }
-// console.log(serviciosCliente);
-
-
-
-
