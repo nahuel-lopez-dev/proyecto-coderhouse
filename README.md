@@ -1,6 +1,6 @@
 # Proyecto Coderhouse
 
-## Este es mi proyecto, para el curso de desarrollo web, de la carrera de desarrollo web full stack de Coderhouse
+## Este es mi proyecto, para el curso de desarrollo web, y para el curso de Javascript, de la carrera de desarrollo web full stack de Coderhouse.
 
 ### * Tiene HTML5, CSS3 (Uso de clases casi en su totalidad), donde se aplica box model, flexbox, y grid con bootstrap, además de aprovechar algunos otros componentes y utilidades de este framework. Combinado a su vez con media query, todo su diseño es responsive incluso a mobile.
 ### * Se hace uso de bootstrap para el nav, parte del footer y otras utilidades.
@@ -8,6 +8,8 @@
 ### * Todo el index.html está hecho con la metodología de BEM. El resto es uso de clases sin esa metodología.
 ### * Contiene animaciones, transiciones, y transformaciones, y mucho más.
 ### * Aplica reglas para la optimización del SEO, como los títulos y los encabezados con h1, para cada html, las etiquetas meta para keywords y description, alt para todas las imágenes, y un diseño web adaptable, totalmente responsive.
+### La idea de usar el proyecto ya usado en web, para el curso de Javascript, es volver a la página dinámica y funcional.
+### Aplica estructuras de control, y contiene clases con constructor y métodos. El proyecto todavía no está terminado, está en proceso mientras se le sigue aplicando Js.
 
 #### *¡Thanks a lot for reading me!* _Yours sincerely_... "**Readme**".
 
