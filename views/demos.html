@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones Online Demos</title>
+    <meta name="keywords"
+        content="SOLUCIONES, ONLINE, PROBLEMAS, ARREGLOS, PÁGINAS WEB, DESARROLLO DE SOFTWARE, SOPORTE IT, MARKETING DIGITAL, NEGOCIOS, EMPRESA, SEO,">
+    <meta name="description"
+        content="Esta es la sección de demostraciones, de aplicaciones y soluciones de software de Soluciones Online.">
+    <!--Enlaces a google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!--Enlace a CSS de Bootstrap local-->
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
+    <!--Enlace a css-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="fondoIndex">
+    <!-- acá empieza la cabecera -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-5">
+            <div class="container-fluid">
+                <div class="column">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"
+                            alt="Logo de Soluciones Online" class="logoNav"></a>
+                    <a class="navbar-brand" href="../index.html"><img src="../img/slogan.png"
+                            alt="slogan de Soluciones Online" class="sloganNav"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDarkDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="servicios.html">Páginas web</a></li>
+                                <li><a class="dropdown-item" href="servicios.html">Soporte IT</a></li>
+                                <li><a class="dropdown-item" href="servicios.html">Desarrollo de software</a></li>
+                                <li><a class="dropdown-item" href="servicios.html">Marketing digital</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Acá termina la cabecera -->
+
+    <!--Acá empieza el contenido principal-->
+    <main>
+        <section>
+            <h1 class="tituloPri animaUno">Demos de aplicaciones y soluciones de software</h1>
+            <h2 class="tituloServicio bg-dark p-2 mt-5">Agenda de clientes</h2>
+            <div class="serviciosFlex">
+                <div class="cajitaServicio m-4">
+                    <p class="parrafoServicio">Una agenda de clientes y usuarios, potenciales clientes, indispensable para cualquier organización que quiera mantener un control adecuado y organizado de su negocio. Personalizamos esta agenda acorde a sus necesidades, y la combinamos con las mejores tecnologías, para que pueda delegar en nosotros esos trabajos que puede hacerlo un software de gestión. 
+                    </p>
+                    <a href="#modalServicio" button type="button" id="servicioWeb"
+                        class="servicios btn btn-primary btn-lg m-1">Quiero este software</a>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <a href="#agendaClientes" button type="button" id="abrirAgenda" class="btn btn-danger btn-lg m-3">Demo "Agenda"</a>   
+            </div>
+            <!-- Agenda Oculta por defecto-->
+            <div id="agregarCliente" class="agendaOculta"> <!--id menuAgregar class oculto-->
+                <form id="formularioCliente" class="container cajaFormulario bg-dark">
+                    <!--id formularioPeliculas-->
+                    <div class="form-group col-md-12">
+                      <label for="nombreCliente"></label>
+                      <input id="nombreCliente" name="nombreCliente" type="text" class="form-control" placeholder=" Nombre del cliente"
+                        required>
+                    </div>
+          
+                    <div class="form-group col-md-12 mb-3">
+                      <label for="emailCliente"></label>
+                      <input id="emailCliente" type="emailCliente" class="form-control" placeholder="Email del cliente" required>
+                    </div>
+          
+                    <div class="col-md-12 text-white">
+                      <label for="exampleFormControlTextarea1" class="form-label m-2">Motivos del cliente:</label>
+                      <textarea class="form-control" id="motivosCliente" rows="3"></textarea>
+                    </div>
+          
+                    <div class="form-group text-center">
+                      <label></label>
+                      <input id="guardarCliente" type="submit" class="btn btn-lg btn-primary m-3" value="Guardar cliente">
+                      <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Resetear campos">
+                    </div>
+                  </form>
+            </div>
+
+            <div id="lista"></div>
+
+
+            <h2 class="tituloServicio bg-dark p-2 mt-4">Despliegue de ventanas ocultas</h2>
+            <div class="serviciosFlex">
+                <div class="cajitaServicio m-4">
+                    <p class="parrafoServicio">Cuidamos el valor de tus datos, de la empresa y de las personas, dando
+                        soluciones
+                        para proteger la seguridad en los ambientes digitales. La seguridad informática es manejada por
+                        nuestro sector
+                        de soporte altamente capacitado y experimentado.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum distinctio ab provident voluptates. Mollitia voluptates ratione incidunt, odio, provident nostrum cum laudantium impedit in itaque blanditiis eum perferendis, dolorem sit?
+                    </p>
+                    <a href="#modalServicio" button type="button" id="servicioSoporte"
+                        class="servicios btn btn-primary btn-lg m-1">Quiero estas aplicaciones</a>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <a href="#agendaClientes" button type="button" id="btnAbrirAgenda" class="btn btn-danger btn-lg m-3">Demo "Ventanas ocultas"</a>   
+            </div>
+
+            <!-- Modal de servicios oculto -->
+            <div id="modalServicio" class="oculto modalOculto">
+                <form class="container-fluid cajaFormulario bg-dark">
+                    <button class="closeModal btn-lg m-1">&times;</button>
+                    <p class="valores m-1 p-2">Complete estos datos y pronto un asesor se comunicará con usted</p>
+                    <div class="form-group">
+                        <label for="primerNombre"></label>
+                        <input id="primerNombre" type="text" class="form-control" placeholder=" Nombre o empresa">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input id="email" type="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="form-group text-center">
+                        <label></label>
+                        <input type="submit" class="btn btn-lg btn-primary m-3" value="Enviar">
+                        <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Borrar">
+                    </div>
+                </form>
+            </div>
+            <!-- Fin de modal de servicios oculto-->
+
+            <div id="modalOculto" class="overlay"></div>
+
+            <h2 class="tituloServicio bg-dark p-2 mt-4">Dark Mode, cambio de tema</h2>
+            <div class=" serviciosFlex">
+                <div class="cajitaServicio m-4">
+                    <p class=" parrafoServicio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem cum, voluptate, eveniet pariatur sed beatae fuga soluta magni voluptates quam necessitatibus quae voluptas, dolore iusto porro nulla recusandae esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aperiam! Quia odit quae maiores eum alias beatae sequi quas tenetur, consectetur earum fuga iste explicabo nulla dolorum voluptatum, laboriosam modi.
+                    </p>
+                    <a href="#modalServicio" button type="button" id="servicioSoftware"
+                        class="servicios btn btn-primary btn-lg m-1">Quiero esta opción</a>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <a href="#agendaClientes" button type="button" id="btnAbrirAgenda" class="btn btn-danger btn-lg m-3">Demo "Cambio de tema"</a>   
+            </div>
+
+            <h2 class="tituloServicio bg-dark p-2 mt-4">Otro software</h2>
+            <div class="serviciosFlex">
+                <div class="cajitaServicio m-4">
+                    <p class="parrafoServicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aperiam eligendi, accusamus blanditiis sit rerum eveniet reiciendis natus repellat beatae voluptatem dolorem ratione quam exercitationem illum rem dolores iusto at? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias dicta hic corporis quod officiis natus quis corrupti nemo vero? Quis rem laborum dolores fugiat velit commodi fuga reprehenderit ab. Cum.</p>
+                    <a href="#modalServicio" button type="button" id="servicioMarketing"
+                        class="servicios btn btn-primary btn-lg m-1">Quiero este software</a>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <a href="#agendaClientes" button type="button" id="btnAbrirAgenda" class="btn btn-danger btn-lg m-3">Demo "Software X"</a>   
+            </div>
+        </section>
+    </main>
+    <!--Acá termina el contenido principal-->
+
+    <!--Acá empieza el pie de página-->
+    <footer class="container-fluid background bg-dark cajaPie">
+        <div class="contenedorPie">
+            <ul>
+                <li class="contenedorPie__items"><a href="../index.html"
+                        class="contenedorPie__items--itemsColor">Home</a></li>
+                <li class="contenedorPie__items"><a href="nosotros.html"
+                        class="contenedorPie__items--itemsColor">Nosotros<a>
+                </li>
+                <li class="contenedorPie__items"><a href="servicios.html"
+                        class="contenedorPie__items--itemsColor">Servicios</a>
+                </li>
+                <li class="contenedorPie__items"><a href="blog.html" class="contenedorPie__items--itemsColor">Blog</a>
+                </li>
+                <li class="contenedorPie__items"><a href="contactanos.html"
+                        class="contenedorPie__items--itemsColor">Contactanos</a></li>
+            </ul>
+        </div>
+
+        <div class="contenedorPie">
+            <h5 class="contenedorPie__items contenedorPie__items--itemsColor">¡Seguinos en las redes!</h5>
+            <ul class="contenedorRedes">
+                <li><a href="https://www.linkedin.com/in/nahuel-lopez-a3bb32147/" target="_blank"><img
+                            src="../img/linkedin.svg" class="logoRedes"></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="../img/twitter.svg" class="logoRedes"></a>
+                </li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.svg"
+                            class="logoRedes"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contenedorPie">
+            <a href="../index.html"><img src="../img/logo.png" class="logoFooter"></a>
+        </div>
+
+        <div class="contenedorPie">
+            <h5 class="contenedorPie__items contenedorPie__items--itemsColor">© Soluciones Online 2021</h5>
+            <h6 class="contenedorPie__items contenedorPie__items--itemsColor">Todos los derechos reservados<h6>
+        </div>
+    </footer>
+    <!--Acá termina el pie de página-->
+
+    <!--Enlace a Js local-->
+    <script src="../assets/js/servicios.js"></script>
+    <!--Enlace a Js de Bootstrap local-->
+    <script src="../assets/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

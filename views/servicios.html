@@ -80,7 +80,7 @@
             exclusivos y personalizados a tu negocio, para tu tipo de cliente. Además crearemos funcionalidades para que
             tu negocio destaque en internet.
           </p>
-          <a href="#" button type="button" class="btn btn-primary btn-lg m-1">Quiero mi web</a>
+          <a href="#modalServicio" button type="button" id="servicioWeb" class="servicios btn btn-primary btn-lg m-1">Quiero mi web</a>
         </div>
       </div>
   
@@ -94,9 +94,35 @@
             Ofrecemos varios esquemas de soporte: presencial y remoto. Nos adaptamos a tus necesidades, brindando el
             servicio que cada organización requiere.
           </p>
-          <a href="#" button type="button" class="btn btn-primary btn-lg m-1">Quiero mi soporte</a>
+          <a href="#modalServicio" button type="button" id="servicioSoporte" class="servicios btn btn-primary btn-lg m-1">Quiero mi soporte</a>
         </div>
       </div>
+
+      <!-- Modal de servicios oculto -->
+      <div id="modalServicio" class="oculto modalOculto">
+        <form class="container-fluid cajaFormulario bg-dark">
+          <button class="closeModal btn-lg m-1">&times;</button>
+          <p class="valores m-1 p-2">Complete estos datos y pronto un asesor se comunicará con usted</p>
+          <div class="form-group">
+            <label for="primerNombre"></label>
+            <input id="primerNombre" type="text" class="form-control" placeholder=" Nombre o empresa">
+          </div>
+
+          <div class="form-group">
+            <label for="email"></label>
+            <input id="email" type="email" class="form-control"  placeholder="Email">
+          </div>
+
+          <div class="form-group text-center">
+            <label></label>
+            <input type="submit" class="btn btn-lg btn-primary m-3" value="Enviar">
+            <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Borrar">
+          </div>
+        </form>
+      </div>
+      <!-- Fin de modal de servicios oculto-->
+
+      <div id="modalOculto" class="overlay"></div>
   
       <h2 class="tituloServicio bg-dark p-2 mt-4">Desarrollo de software</h2>
       <div class=" serviciosFlex">
@@ -108,10 +134,11 @@
             perfectamente terminados para el tipo de solución que requieras. Encontrá en nuestro departamento, el socio
             tecnológico que tu empresa necesita.
           </p>
-          <a href="#" button type="button" class="btn btn-primary btn-lg m-1">Quiero mi software</a>
+          <a href="#modalServicio" button type="button" id="servicioSoftware" class="servicios btn btn-primary btn-lg m-1">Quiero mi software</a>
+          <a href="demos.html" button type="button" id="demoSoftware" class="btn btn-danger btn-lg m-1">Demos</a>
         </div>
       </div>
-  
+
       <h2 class="tituloServicio bg-dark p-2 mt-4">Marketing digital</h2>
       <div class="serviciosFlex">
         <img src="../img/marketingOnline.jpg" class="imgServicio">
@@ -119,7 +146,7 @@
           <p class="parrafoServicio">Te alcanzamos más clientes y te ayudamos a vender por internet. Crearemos campañas de
             marketing únicas y diseñadas exclusivamente para tu negocio. Gestionamos tus campañas de publicidad, para que
             esos clientes potenciales puedan llegar a tu negocio.</p>
-          <a href="#" button type="button" class="btn btn-primary btn-lg m-1">Quiero mi marketing</a>
+          <a href="#modalServicio" button type="button" id="servicioMarketing" class="servicios btn btn-primary btn-lg m-1">Quiero mi marketing</a>
         </div>
       </div>
     </section>
