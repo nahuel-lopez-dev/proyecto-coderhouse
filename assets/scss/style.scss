@@ -418,44 +418,45 @@ $theme-colors: (
     animation-delay: 0.7s;
 }
 
-@keyframes efectoDos {
-    0% {
-        font-family: $letraFuente;   /*Propiedades CSS*/
-    }
-    20% {
-        transform: rotate(45deg);
-        color: $colorTres;
-        font-family: $letraFuente;
-    }
-    40% {
-        transform: rotate(90deg);
-        color: $colorDos;
-        font-family: $letraFuente;
-    }
-    60% {
-        transform: rotate(180deg);
-        color: $colorTres;
-        font-family: $letraFuente;
-    }
-    80% {
-        transform: rotate(270deg);
-        color: $colorDos;
-        font-family: $letraFuente;
-    }
-    100% {
-        transform: rotate(360deg);
-        color: $colorUno;
-        font-family: $letraFuente;   /*Propiedades CSS*/
-    } /*Final de la animación*/
-}
+/*Efecto para girar un objeto. No es muy estético*/
+// @keyframes efectoDos {
+//     0% {
+//         font-family: $letraFuente;   /*Propiedades CSS*/
+//     }
+//     20% {
+//         transform: rotate(45deg);
+//         color: $colorTres;
+//         font-family: $letraFuente;
+//     }
+//     40% {
+//         transform: rotate(90deg);
+//         color: $colorDos;
+//         font-family: $letraFuente;
+//     }
+//     60% {
+//         transform: rotate(180deg);
+//         color: $colorTres;
+//         font-family: $letraFuente;
+//     }
+//     80% {
+//         transform: rotate(270deg);
+//         color: $colorDos;
+//         font-family: $letraFuente;
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//         color: $colorUno;
+//         font-family: $letraFuente;   /*Propiedades CSS*/
+//     } /*Final de la animación*/
+// }
 
-.animaDos {
-    animation-name: efectoDos; /*Nombre del keyframe*/
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in;
-    animation-duration: 0.7s;
-    animation-delay: 1s;
-}
+// .animaDos {
+//     animation-name: efectoDos; /*Nombre del keyframe*/
+//     animation-iteration-count: 2;
+//     animation-timing-function: ease-in;
+//     animation-duration: 0.7s;
+//     animation-delay: 1s;
+// }
 
 /*Adaptación a tablet*/
 @media(max-width: 991.98px) {

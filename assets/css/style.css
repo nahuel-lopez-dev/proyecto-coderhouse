@@ -3494,41 +3494,7 @@ textarea.form-control-lg {
   animation-duration: 0.5s;
   animation-delay: 0.7s; }
 
-@keyframes efectoDos {
-  0% {
-    font-family: "Nunito", sans-serif;
-    /*Propiedades CSS*/ }
-  20% {
-    transform: rotate(45deg);
-    color: #b8b5b5;
-    font-family: "Nunito", sans-serif; }
-  40% {
-    transform: rotate(90deg);
-    color: white;
-    font-family: "Nunito", sans-serif; }
-  60% {
-    transform: rotate(180deg);
-    color: #b8b5b5;
-    font-family: "Nunito", sans-serif; }
-  80% {
-    transform: rotate(270deg);
-    color: white;
-    font-family: "Nunito", sans-serif; }
-  100% {
-    transform: rotate(360deg);
-    color: black;
-    font-family: "Nunito", sans-serif;
-    /*Propiedades CSS*/ }
-  /*Final de la animación*/ }
-
-.animaDos {
-  animation-name: efectoDos;
-  /*Nombre del keyframe*/
-  animation-iteration-count: 2;
-  animation-timing-function: ease-in;
-  animation-duration: 0.7s;
-  animation-delay: 1s; }
-
+/*Efecto para girar un objeto. No es muy estético*/
 /*Adaptación a tablet*/
 @media (max-width: 991.98px) {
   .logoNav {
