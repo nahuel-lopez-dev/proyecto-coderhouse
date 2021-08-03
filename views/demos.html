@@ -74,45 +74,66 @@
             <h2 class="tituloServicio bg-dark p-2 mt-5">Agenda de clientes</h2>
             <div class="serviciosFlex">
                 <div class="cajitaServicio m-4">
-                    <p class="parrafoServicio">Una agenda de clientes y usuarios, potenciales clientes, indispensable para cualquier organización que quiera mantener un control adecuado y organizado de su negocio. Personalizamos esta agenda acorde a sus necesidades, y la combinamos con las mejores tecnologías, para que pueda delegar en nosotros esos trabajos que puede hacerlo un software de gestión. 
+                    <p class="parrafoServicio">Una agenda de clientes y usuarios, potenciales clientes, indispensable
+                        para cualquier organización que quiera mantener un control adecuado y organizado de su negocio.
+                        Personalizamos esta agenda acorde a sus necesidades, y la combinamos con las mejores
+                        tecnologías, para que pueda delegar en nosotros esos trabajos que puede hacerlo un software de
+                        gestión.
                     </p>
                     <a href="#modalServicio" button type="button" id="servicioWeb"
                         class="servicios btn btn-primary btn-lg m-1">Quiero este software</a>
                 </div>
             </div>
             <div class="container-fluid">
-                <a href="#agendaClientes" button type="button" id="abrirAgenda" class="btn btn-danger btn-lg m-3">Demo "Agenda"</a>   
+                <a href="#agendaClientes" button type="button" id="abrirAgenda" class="btn btn-danger btn-lg m-3">Demo
+                    "Agenda de clientes"</a>
             </div>
             <!-- Agenda Oculta por defecto-->
-            <div id="agregarCliente" class="agendaOculta"> <!--id menuAgregar class oculto-->
+            <div id="agregarCliente" class="agendaOculta">
+                <!--id menuAgregar class oculto-->
                 <form id="formularioCliente" class="container cajaFormulario bg-dark">
                     <!--id formularioPeliculas-->
                     <div class="form-group col-md-12">
-                      <label for="nombreCliente"></label>
-                      <input id="nombreCliente" name="nombreCliente" type="text" class="form-control" placeholder=" Nombre del cliente"
-                        required>
+                        <label for="nombreCliente"></label>
+                        <input id="nombreCliente" name="nombreCliente" type="text" class="form-control"
+                            placeholder=" Nombre del cliente" required>
                     </div>
-          
+
                     <div class="form-group col-md-12 mb-3">
-                      <label for="emailCliente"></label>
-                      <input id="emailCliente" type="emailCliente" class="form-control" placeholder="Email del cliente" required>
+                        <label for="telCliente"></label>
+                        <input id="telCliente" type="tel" class="form-control" placeholder="Tel o Cel del cliente">
                     </div>
-          
+
+                    <div class="form-group col-md-12 mb-3">
+                        <label for="emailCliente"></label>
+                        <input id="emailCliente" type="email" class="form-control" placeholder="Email del cliente"
+                            required>
+                    </div>
+
                     <div class="col-md-12 text-white">
-                      <label for="exampleFormControlTextarea1" class="form-label m-2">Motivos del cliente:</label>
-                      <textarea class="form-control" id="motivosCliente" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea1" class="form-label m-2">Motivos del cliente:</label>
+                        <textarea id="motivosCliente" class="form-control" rows="3"></textarea>
                     </div>
-          
+
+                    <div class="form-group col-md-4 mb-3">
+                        <label for="id"></label>
+                        <input id="id" name="idCliente" type="text" class="form-control"
+                            placeholder="ID del cliente" required>
+                    </div>
+
                     <div class="form-group text-center">
-                      <label></label>
-                      <input id="guardarCliente" type="submit" class="btn btn-lg btn-primary m-3" value="Guardar cliente">
-                      <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Resetear campos">
+                        <label></label>
+                        <input id="guardarCliente" type="submit" class="btn btn-lg btn-primary m-3"
+                            value="Guardar cliente">
+                        <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Resetear campos">
                     </div>
-                  </form>
+                </form>
+                <div class="form-group text-center">
+                    <label></label>
+                    <input id="borrarTodo" type="submit" class="btn btn-lg btn-danger m-3" value="Borrar clientes">
+                </div>
+                <div id="lista"></div>
             </div>
-
-            <div id="lista"></div>
-
 
             <h2 class="tituloServicio bg-dark p-2 mt-4">Despliegue de ventanas ocultas</h2>
             <div class="serviciosFlex">
@@ -122,14 +143,17 @@
                         para proteger la seguridad en los ambientes digitales. La seguridad informática es manejada por
                         nuestro sector
                         de soporte altamente capacitado y experimentado.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum distinctio ab provident voluptates. Mollitia voluptates ratione incidunt, odio, provident nostrum cum laudantium impedit in itaque blanditiis eum perferendis, dolorem sit?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum distinctio ab provident
+                        voluptates. Mollitia voluptates ratione incidunt, odio, provident nostrum cum laudantium impedit
+                        in itaque blanditiis eum perferendis, dolorem sit?
                     </p>
                     <a href="#modalServicio" button type="button" id="servicioSoporte"
                         class="servicios btn btn-primary btn-lg m-1">Quiero estas aplicaciones</a>
                 </div>
             </div>
             <div class="container-fluid">
-                <a href="#agendaClientes" button type="button" id="btnAbrirAgenda" class="btn btn-danger btn-lg m-3">Demo "Ventanas ocultas"</a>   
+                <a href="#agendaClientes" button type="button" id="btnAbrirAgenda"
+                    class="btn btn-danger btn-lg m-3">Demo "Ventanas ocultas"</a>
             </div>
 
             <!-- Modal de servicios oculto -->
@@ -161,26 +185,36 @@
             <h2 class="tituloServicio bg-dark p-2 mt-4">Dark Mode, cambio de tema</h2>
             <div class=" serviciosFlex">
                 <div class="cajitaServicio m-4">
-                    <p class=" parrafoServicio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem cum, voluptate, eveniet pariatur sed beatae fuga soluta magni voluptates quam necessitatibus quae voluptas, dolore iusto porro nulla recusandae esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aperiam! Quia odit quae maiores eum alias beatae sequi quas tenetur, consectetur earum fuga iste explicabo nulla dolorum voluptatum, laboriosam modi.
+                    <p class=" parrafoServicio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem
+                        cum, voluptate, eveniet pariatur sed beatae fuga soluta magni voluptates quam necessitatibus
+                        quae voluptas, dolore iusto porro nulla recusandae esse. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Totam, aperiam! Quia odit quae maiores eum alias beatae sequi quas tenetur,
+                        consectetur earum fuga iste explicabo nulla dolorum voluptatum, laboriosam modi.
                     </p>
                     <a href="#modalServicio" button type="button" id="servicioSoftware"
                         class="servicios btn btn-primary btn-lg m-1">Quiero esta opción</a>
                 </div>
             </div>
             <div class="container-fluid">
-                <a href="#agendaClientes" button type="button" id="btnAbrirAgenda" class="btn btn-danger btn-lg m-3">Demo "Cambio de tema"</a>   
+                <a href="#agendaClientes" button type="button" id="btnAbrirAgenda"
+                    class="btn btn-danger btn-lg m-3">Demo "Cambio de tema"</a>
             </div>
 
             <h2 class="tituloServicio bg-dark p-2 mt-4">Otro software</h2>
             <div class="serviciosFlex">
                 <div class="cajitaServicio m-4">
-                    <p class="parrafoServicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aperiam eligendi, accusamus blanditiis sit rerum eveniet reiciendis natus repellat beatae voluptatem dolorem ratione quam exercitationem illum rem dolores iusto at? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias dicta hic corporis quod officiis natus quis corrupti nemo vero? Quis rem laborum dolores fugiat velit commodi fuga reprehenderit ab. Cum.</p>
+                    <p class="parrafoServicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aperiam
+                        eligendi, accusamus blanditiis sit rerum eveniet reiciendis natus repellat beatae voluptatem
+                        dolorem ratione quam exercitationem illum rem dolores iusto at? Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Alias dicta hic corporis quod officiis natus quis corrupti nemo
+                        vero? Quis rem laborum dolores fugiat velit commodi fuga reprehenderit ab. Cum.</p>
                     <a href="#modalServicio" button type="button" id="servicioMarketing"
                         class="servicios btn btn-primary btn-lg m-1">Quiero este software</a>
                 </div>
             </div>
             <div class="container-fluid">
-                <a href="#agendaClientes" button type="button" id="btnAbrirAgenda" class="btn btn-danger btn-lg m-3">Demo "Software X"</a>   
+                <a href="#agendaClientes" button type="button" id="btnAbrirAgenda"
+                    class="btn btn-danger btn-lg m-3">Demo "Software X"</a>
             </div>
         </section>
     </main>
