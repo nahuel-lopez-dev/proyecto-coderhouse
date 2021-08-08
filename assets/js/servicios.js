@@ -10,11 +10,11 @@
 /***** Entidades *****/
 class Cliente {
     constructor(nombreCliente, telCliente, emailCliente, motivosCliente, id) {
-        this.nombreCliente  = nombreCliente;
-        this.telCliente     = telCliente;
-        this.emailCliente   = emailCliente;
+        this.nombreCliente = nombreCliente;
+        this.telCliente = telCliente;
+        this.emailCliente = emailCliente;
         this.motivosCliente = motivosCliente;
-        this.id             = id;
+        this.id = id;
     }
 }
 
@@ -37,27 +37,32 @@ const btnBorrarCliente = document.querySelector("#borrarCliente");
 
 /** Función flecha para desocultar el modal de servicios (oculto por defecto): **/
 const openService = () => {
-    modalOculto.classList.remove("oculto");    
+    modalOculto.classList.remove("oculto");
 }
 /** Función flecha para volver a ocultar el modal de servicios: **/
 const closeModal = () => {
     modalOculto.classList.add("oculto");
 }
-/**** Funciones para "agenda oculta" **/
-/** Función flecha para desocultar agenda y mostrar clientes. A su vez, sirve para ocultarla **/
+/***** Funciones para "agenda oculta" *****/
+/** Función flecha para desocultar agenda y mostrar clientes. A su vez, sirve para ocultarla.
+ ** Tiene incluida una animación con jQuery para que la agenda aparezca y desaparezca con más gracia **/
 const mostrarClientes = () => {
+    $("#agregarCliente").animate({
+        opacity: "toggle",
+        height: "toggle"
+    }, 2500);
     document.querySelector("#agregarCliente").classList.toggle("agendaOculta");
     mostrarLista(cargarLista());
-} 
+}
 
 /** Función flecha para cargar el listado de clientes del localStorage o iniciarlo si no hay **/
 const cargarLista = () => {
     let listaClientes = JSON.parse(localStorage.getItem("listaClientes"));
     if (listaClientes == null) {
-        return[];
-    } 
+        return [];
+    }
     return listaClientes;
-} 
+}
 /** Función para guardar en localStorage la lista de clientes **/
 const guardarLista = (listaClientes) => {
     localStorage.setItem("listaClientes", JSON.stringify(listaClientes));
@@ -71,13 +76,13 @@ function guardarCliente(e) {
     let emailCliente = document.querySelector("#emailCliente").value;
     let motivosCliente = document.querySelector("#motivosCliente").value;
     let id = document.querySelector("#id").value;
-    
+
     const listaClientes = cargarLista();
-    
+
     listaClientes.push(new Cliente(nombreCliente, telCliente, emailCliente, motivosCliente, id));
-    
+
     guardarLista(listaClientes);
-    
+
     document.querySelector("#formularioCliente").reset();
 }
 
@@ -93,10 +98,10 @@ const borrarCliente = (id) => {
     guardarLista(listaClientes);
 }
 /** Función tradicional para armar una presentación para cada cliente */
-function armarPresentacion(elemento){
+function armarPresentacion(elemento) {
     const presentacion = document.createElement("div");
     presentacion.classList.add("presentacion");
-    
+
     const btnBorrarCliente = document.createElement("div");
     btnBorrarCliente.textContent = "Borrar Cliente";
     btnBorrarCliente.classList.add("btn", "btn-danger", "float-end", "m-3");
@@ -107,7 +112,7 @@ function armarPresentacion(elemento){
     const nombreDelCliente = document.createElement("h3");
     nombreDelCliente.textContent = `${elemento.nombreCliente}`;
     presentacion.appendChild(nombreDelCliente);
-    
+
     const telDelCliente = document.createElement("div");
     telDelCliente.textContent = `Tel/Cel: ${elemento.telCliente}`;
     presentacion.appendChild(telDelCliente);
@@ -115,11 +120,11 @@ function armarPresentacion(elemento){
     const emailDelCliente = document.createElement("div");
     emailDelCliente.textContent = `Email: ${elemento.emailCliente}`;
     presentacion.appendChild(emailDelCliente);
-    
+
     const motivosDelCliente = document.createElement("div");
     motivosDelCliente.textContent = `Motivo: ${elemento.motivosCliente}`;
     presentacion.appendChild(motivosDelCliente);
-    
+
     return presentacion;
 }
 /** Función flecha para mostrar la lista de clientes */
@@ -152,6 +157,29 @@ abrirAgenda.addEventListener("click", mostrarClientes);
 formularioCliente.addEventListener("submit", guardarCliente);
 /** Evento para borrar todos los clientes **/
 btnBorrarTodo.addEventListener("click", borrarTodo);
+
+/***** Selectores y eventos con jQuery *****/
+/** Cambia el puntero tradicional del mouse, por una cruz **/
+$("html, body").css("cursor", "crosshair");
+/** Para mostrar y ocultar la información acerca de lo que contiene la sección **/
+$("#btnAbrirInfo").click(function () {
+    $(".infOculta").toggle(1000);
+})
+//creando contenedores y un botón con clases de bootstrap y del css
+$("#irArriba").append(`<div class="container">
+                        <div class="parrafoServicio m-5">
+                            <a id="sube" class="btn btn-lg btn-dark m-3">Volver arriba</a>
+                        </div>
+                   </div>`);
+// Se asocia la animación al click, en el botón que le puse id="sube"
+$('#sube').click(function (e) {
+    e.preventDefault();
+    //Animación con animate concatenada .................. agregar cosas para concatenar .............
+    $('html, body').animate({
+        scrollTop: $("#inicio").offset().top
+    }, 1500);
+});
+
 
 /***** Lógica *****/
 mostrarLista(cargarLista());

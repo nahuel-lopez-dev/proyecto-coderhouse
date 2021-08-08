@@ -21,7 +21,7 @@
 
 <body class="fondoIndex">
     <!-- acá empieza la cabecera -->
-    <header>
+    <header id="inicio">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-5">
             <div class="container-fluid">
                 <div class="column">
@@ -71,17 +71,21 @@
     <main>
         <section>
             <h1 class="tituloPri animaUno">Demos de aplicaciones y soluciones de software</h1>
+            <div class="parrafoServicio m-4">
+                <button id="btnAbrirInfo" class="btn btn-lg btn-danger m-3">Información</button>
+                <p class="infOculta bg-dark subtitulo p-3 m-3">En esta sección se muestra el proyecto principal de JavaScript y otras aplicaciones con jQuery</p>
+            </div>
             <h2 class="tituloServicio bg-dark p-2 mt-5">Agenda de clientes</h2>
             <div class="serviciosFlex">
-                <div class="cajitaServicio m-4">
-                    <p class="parrafoServicio">Una agenda de clientes y usuarios, potenciales clientes, indispensable
+                <div class="cajitaServicio bg-dark m-4">
+                    <p class="parrafoValores p-3">Una agenda de clientes y usuarios, potenciales clientes, indispensable
                         para cualquier organización que quiera mantener un control adecuado y organizado de su negocio.
                         Personalizamos esta agenda acorde a sus necesidades, y la combinamos con las mejores
                         tecnologías, para que pueda delegar en nosotros esos trabajos que puede hacerlo un software de
                         gestión.
                     </p>
                     <a href="#modalServicio" button type="button" id="servicioWeb"
-                        class="servicios btn btn-primary btn-lg m-1">Quiero este software</a>
+                        class="servicios btn btn-secondary btn-lg m-1">Quiero este software</a>
                 </div>
             </div>
             <div class="container-fluid">
@@ -123,7 +127,7 @@
 
                     <div class="form-group text-center">
                         <label></label>
-                        <input id="guardarCliente" type="submit" class="btn btn-lg btn-primary m-3"
+                        <input id="guardarCliente" type="submit" class="btn btn-lg btn-secondary m-3"
                             value="Guardar cliente">
                         <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Resetear campos">
                     </div>
@@ -135,10 +139,10 @@
                 <div id="lista"></div>
             </div>
 
-            <h2 class="tituloServicio bg-dark p-2 mt-4">Despliegue de ventanas ocultas</h2>
+            <h2 class="tituloServicio bg-dark p-2 mt-4">Otro software</h2>
             <div class="serviciosFlex">
-                <div class="cajitaServicio m-4">
-                    <p class="parrafoServicio">Cuidamos el valor de tus datos, de la empresa y de las personas, dando
+                <div class="cajitaServicio bg-dark m-4">
+                    <p class="parrafoValores p-3">Cuidamos el valor de tus datos, de la empresa y de las personas, dando
                         soluciones
                         para proteger la seguridad en los ambientes digitales. La seguridad informática es manejada por
                         nuestro sector
@@ -148,12 +152,12 @@
                         in itaque blanditiis eum perferendis, dolorem sit?
                     </p>
                     <a href="#modalServicio" button type="button" id="servicioSoporte"
-                        class="servicios btn btn-primary btn-lg m-1">Quiero estas aplicaciones</a>
+                        class="servicios btn btn-secondary btn-lg m-1">Quiero este software</a>
                 </div>
             </div>
             <div class="container-fluid">
                 <a href="#agendaClientes" button type="button" id="btnAbrirAgenda"
-                    class="btn btn-danger btn-lg m-3">Demo "Ventanas ocultas"</a>
+                    class="btn btn-danger btn-lg m-3">Demo "Software X"</a>
             </div>
 
             <!-- Modal de servicios oculto -->
@@ -173,7 +177,7 @@
 
                     <div class="form-group text-center">
                         <label></label>
-                        <input type="submit" class="btn btn-lg btn-primary m-3" value="Enviar">
+                        <input type="submit" class="btn btn-lg btn-secondary m-3" value="Enviar">
                         <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Borrar">
                     </div>
                 </form>
@@ -182,34 +186,34 @@
 
             <div id="modalOculto" class="overlay"></div>
 
-            <h2 class="tituloServicio bg-dark p-2 mt-4">Dark Mode, cambio de tema</h2>
+            <h2 class="tituloServicio bg-dark p-2 mt-4">Otro software</h2>
             <div class=" serviciosFlex">
-                <div class="cajitaServicio m-4">
-                    <p class=" parrafoServicio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem
+                <div class="cajitaServicio bg-dark m-4">
+                    <p class=" parrafoValores p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem
                         cum, voluptate, eveniet pariatur sed beatae fuga soluta magni voluptates quam necessitatibus
                         quae voluptas, dolore iusto porro nulla recusandae esse. Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Totam, aperiam! Quia odit quae maiores eum alias beatae sequi quas tenetur,
                         consectetur earum fuga iste explicabo nulla dolorum voluptatum, laboriosam modi.
                     </p>
                     <a href="#modalServicio" button type="button" id="servicioSoftware"
-                        class="servicios btn btn-primary btn-lg m-1">Quiero esta opción</a>
+                        class="servicios btn btn-secondary btn-lg m-1">Quiero este software</a>
                 </div>
             </div>
             <div class="container-fluid">
                 <a href="#agendaClientes" button type="button" id="btnAbrirAgenda"
-                    class="btn btn-danger btn-lg m-3">Demo "Cambio de tema"</a>
+                    class="btn btn-danger btn-lg m-3">Demo "Software X"</a>
             </div>
 
             <h2 class="tituloServicio bg-dark p-2 mt-4">Otro software</h2>
             <div class="serviciosFlex">
-                <div class="cajitaServicio m-4">
-                    <p class="parrafoServicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aperiam
+                <div class="cajitaServicio bg-dark m-4">
+                    <p class="parrafoValores p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo aperiam
                         eligendi, accusamus blanditiis sit rerum eveniet reiciendis natus repellat beatae voluptatem
                         dolorem ratione quam exercitationem illum rem dolores iusto at? Lorem ipsum dolor sit, amet
                         consectetur adipisicing elit. Alias dicta hic corporis quod officiis natus quis corrupti nemo
                         vero? Quis rem laborum dolores fugiat velit commodi fuga reprehenderit ab. Cum.</p>
                     <a href="#modalServicio" button type="button" id="servicioMarketing"
-                        class="servicios btn btn-primary btn-lg m-1">Quiero este software</a>
+                        class="servicios btn btn-secondary btn-lg m-1">Quiero este software</a>
                 </div>
             </div>
             <div class="container-fluid">
@@ -219,6 +223,10 @@
         </section>
     </main>
     <!--Acá termina el contenido principal-->
+
+    <div id="irArriba">
+
+    </div>
 
     <!--Acá empieza el pie de página-->
     <footer class="container-fluid background bg-dark cajaPie">
@@ -263,6 +271,8 @@
     </footer>
     <!--Acá termina el pie de página-->
 
+    <!-- Enlace a js de Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!--Enlace a Js local-->
     <script src="../assets/js/servicios.js"></script>
     <!--Enlace a Js de Bootstrap local-->

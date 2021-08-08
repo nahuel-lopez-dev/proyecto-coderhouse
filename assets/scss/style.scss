@@ -9,13 +9,13 @@ $colorDos: white;
 $colorTres: rgb(184, 181, 181);
 $colorCuatro: #ffbe50;
 $letraFuente: "Nunito", sans-serif;
-/*Variables cambiadas en bootstrap*/
-$primary: rgb(184, 181, 181);
-$danger: #c0130a;
-$theme-colors: (
-  "primary": $primary,
-  "danger": $danger
-);
+// /*Variables cambiadas en bootstrap*/
+// $primary: rgb(184, 181, 181);
+// $danger: #c0130a;
+// $theme-colors: (
+//   "primary": $primary,
+//   "danger": $danger
+// );
 
 @import "../bootstrap/scss/bootstrap.scss";
 
@@ -365,12 +365,17 @@ $theme-colors: (
 }
 
 .presentacion {
-    background-color: rgb(12, 12, 12);
+    background-color: #212529;
     color: $colorDos;
     font-family: $letraFuente;
     margin: 1vh 1vw;
     padding: 1vh 1vw;
     border-radius: 10px;
+    border: 2px solid $colorCuatro;
+}
+
+.infOculta {
+    display: none;
 }
 
 /*Transición*/
