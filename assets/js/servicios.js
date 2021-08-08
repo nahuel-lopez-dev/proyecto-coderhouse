@@ -158,6 +158,8 @@ formularioCliente.addEventListener("submit", guardarCliente);
 /** Evento para borrar todos los clientes **/
 btnBorrarTodo.addEventListener("click", borrarTodo);
 
+/****************** Desafío 12 entregable y 13 complementario  ******************/
+
 /***** Selectores y eventos con jQuery *****/
 /** Cambia el puntero tradicional del mouse, por una cruz **/
 $("html, body").css("cursor", "crosshair");
@@ -174,12 +176,15 @@ $("#irArriba").append(`<div class="container">
 // Se asocia la animación al click, en el botón que le puse id="sube"
 $('#sube').click(function (e) {
     e.preventDefault();
-    //Animación con animate concatenada .................. agregar cosas para concatenar .............
+    //Animación con animate concatenada
     $('html, body').animate({
         scrollTop: $("#inicio").offset().top
     }, 1500);
+    $("#sube").slideUp(1250);
+    $("#sube").slideDown("fast");
 });
 
+/************************** Fin *******************************/
 
 /***** Lógica *****/
 mostrarLista(cargarLista());
