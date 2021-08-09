@@ -43,6 +43,7 @@ const openService = () => {
 const closeModal = () => {
     modalOculto.classList.add("oculto");
 }
+
 /***** Funciones para "agenda oculta" *****/
 /** Función flecha para desocultar agenda y mostrar clientes. A su vez, sirve para ocultarla.
  ** Tiene incluida una animación con jQuery para que la agenda aparezca y desaparezca con más gracia **/
@@ -54,7 +55,6 @@ const mostrarClientes = () => {
     document.querySelector("#agregarCliente").classList.toggle("agendaOculta");
     mostrarLista(cargarLista());
 }
-
 /** Función flecha para cargar el listado de clientes del localStorage o iniciarlo si no hay **/
 const cargarLista = () => {
     let listaClientes = JSON.parse(localStorage.getItem("listaClientes"));
@@ -178,13 +178,12 @@ $('#sube').click(function (e) {
     e.preventDefault();
     //Animación con animate concatenada
     $('html, body').animate({
-        scrollTop: $("#inicio").offset().top
-    }, 1500);
+        scrollTop: $("#inicio").offset().top}, 1500);
     $("#sube").slideUp(1250);
     $("#sube").slideDown("fast");
 });
 
-/************************** Fin *******************************/
+/******************** Fin Desafíos 12 entregable y 13 complementario *********************/
 
 /***** Lógica *****/
 mostrarLista(cargarLista());
