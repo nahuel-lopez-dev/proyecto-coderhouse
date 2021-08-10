@@ -162,12 +162,17 @@
 
             <!-- Modal de servicios oculto -->
             <div id="modalServicio" class="oculto modalOculto">
-                <form class="container-fluid cajaFormulario bg-dark">
+                <form id="modalFormulario" class="container-fluid cajaFormulario bg-dark">
                     <button class="closeModal btn-lg m-1">&times;</button>
                     <p class="valores m-1 p-2">Complete estos datos y pronto un asesor se comunicará con usted</p>
                     <div class="form-group">
-                        <label for="primerNombre"></label>
-                        <input id="primerNombre" type="text" class="form-control" placeholder=" Nombre o empresa">
+                        <label for="nombre"></label>
+                        <input id="nombre" type="text" class="form-control" placeholder=" Nombre o empresa">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel"></label>
+                        <input id="tel" type="tel" class="form-control" placeholder="Tel o Cel de contacto">
                     </div>
 
                     <div class="form-group">
@@ -177,7 +182,7 @@
 
                     <div class="form-group text-center">
                         <label></label>
-                        <input type="submit" class="btn btn-lg btn-secondary m-3" value="Enviar">
+                        <input id="modalCliente" type="submit" class="btn btn-lg btn-secondary m-3" value="Enviar">
                         <input type="reset" class="btn btn-lg btn-danger text-white m-3" value="Borrar">
                     </div>
                 </form>

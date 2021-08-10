@@ -167,21 +167,34 @@ $("html, body").css("cursor", "crosshair");
 $("#btnAbrirInfo").click(function () {
     $(".infOculta").toggle(1000);
 })
-//creando contenedores y un botón con clases de bootstrap y del css
+/** Creando contenedores y un botón con clases de bootstrap y del css **/
 $("#irArriba").append(`<div class="container">
                         <div class="parrafoServicio m-5">
                             <a id="sube" class="btn btn-lg btn-dark m-3">Volver arriba</a>
                         </div>
                    </div>`);
-// Se asocia la animación al click, en el botón que le puse id="sube"
+/** Se asocia la animación al click, en el botón que le puse id="sube" **/ 
 $('#sube').click(function (e) {
     e.preventDefault();
-    //Animación con animate concatenada
-    $('html, body').animate({
-        scrollTop: $("#inicio").offset().top}, 1500);
+    //Animación con animate concatenada para el desafío complementario
+    $("html, body").animate({scrollTop: $("#inicio").offset().top}, 1500
+    , () => { console.log("Te vas... te vas, te vas, te vas... para arriba!!!") });
     $("#sube").slideUp(1250);
     $("#sube").slideDown("fast");
 });
+/** Evento en el modal de datos del cliente interesado (Oculto por defecto) **/
+$("#modalCliente").click(function(){
+    let nombre = $("#nombre").val();
+    let tel = $("#tel").val();
+    let email = $("#email").val();
+    console.log("Datos del cliente a contactar:");
+    console.log(nombre);
+    console.log(tel);
+    console.log(email);
+    let clienteInteresado = [nombre, tel, email];
+    localStorage.setItem("cliente interesado", JSON.stringify(clienteInteresado));
+    $("#modalFormulario")[0].reset();
+})
 
 /******************** Fin Desafíos 12 entregable y 13 complementario *********************/
 
