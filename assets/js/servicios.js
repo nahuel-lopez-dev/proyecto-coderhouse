@@ -158,7 +158,12 @@ formularioCliente.addEventListener("submit", guardarCliente);
 /** Evento para borrar todos los clientes **/
 btnBorrarTodo.addEventListener("click", borrarTodo);
 
-/****************** Desafío 12 entregable y 13 complementario  ******************/
+
+/***** Lógica *****/
+mostrarLista(cargarLista());
+
+
+/********** jQuery agregado al proyecto **********/
 
 /***** Selectores y eventos con jQuery *****/
 /** Cambia el puntero tradicional del mouse, por una cruz **/
@@ -196,10 +201,21 @@ $("#modalCliente").click(function(){
     $("#modalFormulario")[0].reset();
 })
 
-/******************** Fin Desafíos 12 entregable y 13 complementario *********************/
+/********** Peticiones con jQuery **********/
+const url = "https://www.uuidtools.com/api/generate/timestamp-first"
 
-/***** Lógica *****/
-mostrarLista(cargarLista());
-
-/*****************************************************************************/
-/*****************************************************************************/
+/** Agregamos un botón con jQuery **/
+$("#api").append(`<button id="btnAPI" class="btn btn-danger btn-lg m-3">Generar UUID</button>`);
+/** Escuchamos el evento click del botón agregado **/
+$("#btnAPI").click(()=>{
+    
+    $.get(url, function(respuesta, estado) {
+        if (estado === "success") {
+            console.log(respuesta[0]);
+            $("#respuestaApi").append(`
+            <div class="col-12 bg-dark text-white text-center m-2">
+                <h2>${respuesta[0]}</h2>
+            </div>`);
+        }
+    })
+});
