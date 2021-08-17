@@ -1,17 +1,17 @@
 /***** Variables y selectores *****/
 
 /** Selectores para el modal oculto del cliente interesado: **/
-const modalOculto = document.querySelector(".modalOculto");
-const btnCloseModal = document.querySelector(".closeModal");
-const btnServicioWeb = document.querySelector("#servicioWeb");
-const btnServicioSoporte = document.querySelector("#servicioSoporte");
-const btnServicioSoftware = document.querySelector("#servicioSoftware");
+const modalOculto          = document.querySelector(".modalOculto");
+const btnCloseModal        = document.querySelector(".closeModal");
+const btnServicioWeb       = document.querySelector("#servicioWeb");
+const btnServicioSoporte   = document.querySelector("#servicioSoporte");
+const btnServicioSoftware  = document.querySelector("#servicioSoftware");
 const btnServicioMarketing = document.querySelector("#servicioMarketing");
 
 /***** Funciones *****/
 
 /** Función flecha para desocultar el modal oculto del cliente interesado: **/
-const openService = () => {
+const openModal = () => {
     modalOculto.classList.remove("oculto");
 }
 /** Función flecha para volver a ocultar el modal del cliente interesado: **/
@@ -21,10 +21,10 @@ const closeModal = () => {
 
 /***** Eventos *****/
 /** Eventos para abrir el modal oculto del cliente interesado **/
-btnServicioWeb.addEventListener("click", openService);
-btnServicioSoporte.addEventListener("click", openService);
-btnServicioSoftware.addEventListener("click", openService);
-btnServicioMarketing.addEventListener("click", openService);
+btnServicioWeb.addEventListener("click", openModal);
+btnServicioSoporte.addEventListener("click", openModal);
+btnServicioSoftware.addEventListener("click", openModal);
+btnServicioMarketing.addEventListener("click", openModal);
 /** Evento para ocultar el modal del cliente interesado con el botón de cruz **/
 btnCloseModal.addEventListener("click", closeModal);
 /** Evento para ocultar el modal del cliente interesado con la tecla "Escape": **/
@@ -39,8 +39,8 @@ document.addEventListener("keydown", function (e) {
  ** a la vez que se guardan en el localStorage **/
 $("#modalCliente").click(function(){
     let nombre = $("#nombre").val();
-    let tel = $("#tel").val();
-    let email = $("#email").val();
+    let tel    = $("#tel").val();
+    let email  = $("#email").val();
     console.log("Datos del cliente a contactar:");
     console.log(nombre);
     console.log(tel);

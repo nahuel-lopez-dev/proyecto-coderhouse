@@ -10,33 +10,33 @@
 /***** Entidades *****/
 class Cliente {
     constructor(nombreCliente, telCliente, emailCliente, motivosCliente, id) {
-        this.nombreCliente = nombreCliente;
-        this.telCliente = telCliente;
-        this.emailCliente = emailCliente;
+        this.nombreCliente  = nombreCliente;
+        this.telCliente     = telCliente;
+        this.emailCliente   = emailCliente;
         this.motivosCliente = motivosCliente;
-        this.id = id;
+        this.id             = id;
     }
 }
 
 /***** Variables y selectores *****/
 
 /** Selectores para el modal oculto del cliente interesado: **/
-const modalOculto = document.querySelector(".modalOculto");
-const btnCloseModal = document.querySelector(".closeModal");
-const btnSoftwareUno = document.querySelector("#softwareUno"); //la agenda de clientes
-const btnSoftwareDos = document.querySelector("#softwareDos"); //la API
-const btnSoftwareTres = document.querySelector("#softwareTres");
+const modalOculto       = document.querySelector(".modalOculto");
+const btnCloseModal     = document.querySelector(".closeModal");
+const btnSoftwareUno    = document.querySelector("#softwareUno"); //la agenda de clientes
+const btnSoftwareDos    = document.querySelector("#softwareDos"); //la API
+const btnSoftwareTres   = document.querySelector("#softwareTres");
 const btnSoftwareCuatro = document.querySelector("#softwareCuatro");
 /** Selectores para la agenda oculta: **/
-const abrirAgenda = document.querySelector("#abrirAgenda");
+const abrirAgenda       = document.querySelector("#abrirAgenda");
 const formularioCliente = document.querySelector("#formularioCliente");
-const btnBorrarTodo = document.querySelector("#borrarTodo");
-const btnBorrarCliente = document.querySelector("#borrarCliente");
+const btnBorrarTodo     = document.querySelector("#borrarTodo");
+const btnBorrarCliente  = document.querySelector("#borrarCliente");
 
 /***** Funciones *****/
 
 /** Función flecha para desocultar el modal oculto del cliente interesado: **/
-const openService = () => {
+const openModal = () => {
     modalOculto.classList.remove("oculto");
 }
 /** Función flecha para volver a ocultar el modal del cliente interesado: **/
@@ -71,11 +71,11 @@ const guardarLista = (listaClientes) => {
 /** Función tradicional para guardar los datos de un cliente **/
 function guardarCliente(e) {
     e.preventDefault();
-    let nombreCliente = document.querySelector("#nombreCliente").value;
-    let telCliente = document.querySelector("#telCliente").value;
-    let emailCliente = document.querySelector("#emailCliente").value;
+    let nombreCliente  = document.querySelector("#nombreCliente").value;
+    let telCliente     = document.querySelector("#telCliente").value;
+    let emailCliente   = document.querySelector("#emailCliente").value;
     let motivosCliente = document.querySelector("#motivosCliente").value;
-    let id = document.querySelector("#id").value;
+    let id             = document.querySelector("#id").value;
 
     const listaClientes = cargarLista();
 
@@ -94,7 +94,7 @@ const borrarTodo = () => {
 /** Función flecha para borrar un cliente específico **/
 const borrarCliente = (id) => {
     let listaClientes = cargarLista();
-    listaClientes = listaClientes.filter(cliente => cliente.id != id);
+    listaClientes     = listaClientes.filter(cliente => cliente.id != id);
     guardarLista(listaClientes);
 }
 /** Función tradicional para armar una presentación para cada cliente */
@@ -138,10 +138,10 @@ const mostrarLista = (listaClientes) => {
 
 /***** Eventos *****/
 /** Eventos para abrir el modal oculto del cliente interesado **/
-btnSoftwareUno.addEventListener("click", openService);
-btnSoftwareDos.addEventListener("click", openService);
-btnSoftwareTres.addEventListener("click", openService);
-btnSoftwareCuatro.addEventListener("click", openService);
+btnSoftwareUno.addEventListener("click", openModal);
+btnSoftwareDos.addEventListener("click", openModal);
+btnSoftwareTres.addEventListener("click", openModal);
+btnSoftwareCuatro.addEventListener("click", openModal);
 /** Evento para ocultar el modal de servicios con el botón de cruz **/
 btnCloseModal.addEventListener("click", closeModal);
 /** Evento para ocultar el modal de servicios con la tecla "Escape": **/
@@ -192,8 +192,8 @@ $('#sube').click(function (e) {
  ** a la vez que se guardan en el localStorage **/
 $("#modalCliente").click(function(){
     let nombre = $("#nombre").val();
-    let tel = $("#tel").val();
-    let email = $("#email").val();
+    let tel    = $("#tel").val();
+    let email  = $("#email").val();
     console.log("Datos del cliente a contactar:");
     console.log(nombre);
     console.log(tel);
@@ -213,11 +213,12 @@ $("#btnApi").click(()=>{
     
     $.get(url, function(respuesta, estado) {
         if (estado === "success") {
-            console.log(respuesta[0]);
+            // console.log(respuesta[0]);
             $("#respuestaApi").append(`
             <div class="col-12 bg-dark text-white text-center m-2">
-                <h2>${respuesta[0]}</h2>
+                <h2 class="p-2">${respuesta[0]}</h2>
             </div>`);
         }
     })
 });
+
