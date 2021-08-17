@@ -16,6 +16,9 @@ class Cliente {
         this.motivosCliente = motivosCliente;
         this.id             = id;
     }
+    toString(){
+        return `Cliente agendado:\nNombre: ${this.nombreCliente}\nTel: ${this.telCliente}\nEmail: ${this.emailCliente}\nMotivo: ${this.motivosCliente}\nID: ${this.id}`;
+    }    
 }
 
 /***** Variables y selectores *****/
@@ -79,9 +82,13 @@ function guardarCliente(e) {
 
     const listaClientes = cargarLista();
 
-    listaClientes.push(new Cliente(nombreCliente, telCliente, emailCliente, motivosCliente, id));
+    let clienteNuevo = new Cliente(nombreCliente, telCliente, emailCliente, motivosCliente, id);
+
+    listaClientes.push(clienteNuevo);
 
     guardarLista(listaClientes);
+
+    console.log(clienteNuevo.toString());
 
     document.querySelector("#formularioCliente").reset();
 }
