@@ -125,6 +125,10 @@ function armarPresentacion(elemento) {
     motivosDelCliente.textContent = `Motivo: ${elemento.motivosCliente}`;
     presentacion.appendChild(motivosDelCliente);
 
+    const idDelCliente = document.createElement("div");
+    idDelCliente.textContent = `ID: ${elemento.id}`;
+    presentacion.appendChild(idDelCliente);
+
     return presentacion;
 }
 /** Función flecha para mostrar la lista de clientes */
@@ -161,7 +165,6 @@ btnBorrarTodo.addEventListener("click", borrarTodo);
 
 /***** Lógica *****/
 mostrarLista(cargarLista());
-
 
 /********** jQuery agregado al proyecto **********/
 
@@ -204,6 +207,7 @@ $("#modalCliente").click(function(){
 })
 
 /********** Peticiones con jQuery **********/
+/********** Generador de UUID **********/
 const url = "https://www.uuidtools.com/api/generate/timestamp-first"
 
 /** Agregamos un botón con jQuery **/
