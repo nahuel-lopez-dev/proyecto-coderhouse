@@ -45,7 +45,7 @@ Si quieres saber más sobre mí, puedes ir a mi perfil de GitHub:
 
 
 <div align="center">
-  <p>Desarrollador con 💙 por <i><b>NaLo Dev ထ</b></i></p>
+  <p>Desarrollado con 💙 por <i><b>NaLo Dev ထ</b></i></p>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=C2D9F8&height=80"/>
