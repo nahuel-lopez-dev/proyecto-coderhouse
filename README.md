@@ -34,7 +34,7 @@ Este es mi proyecto, para el curso de desarrollo web, y para el curso de Javascr
 
 Si quieres saber más sobre mí, puedes ir a mi perfil de GitHub:
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub:-Nahuel_Lopez_Dev♾️-05122A?flat&logo=github&logoColor=white&labelColor=343941)](https://github.com/nahuel-lopez-dev)
+[![GitHub Profile](https://img.shields.io/badge/GitHub:-Nahuel_Lopez_Dev_ထ-05122A?flat&logo=github&logoColor=white&labelColor=343941)](https://github.com/nahuel-lopez-dev)
   
 💬 Siéntete libre de ponerte en contacto conmigo:
 
@@ -43,11 +43,10 @@ Si quieres saber más sobre mí, puedes ir a mi perfil de GitHub:
 [![Linktree](https://img.shields.io/badge/-Linktree-323330?flat&logo=linktree&logoColor=#41e45f)](https://linktr.ee/nahuel.lopez)
 
 
+
 <div align="center">
   <p>Desarrollador con 💙 por <i><b>NaLo Dev ထ</b></i></p>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=C2D9F8&height=80"/>
-
-
 
